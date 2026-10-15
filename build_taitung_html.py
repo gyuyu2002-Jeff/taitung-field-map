@@ -1294,7 +1294,11 @@ html_template = '''<!DOCTYPE html>
 
     // 匯出 CSV (Excel 繁中相容 UTF-8 with BOM)
     document.getElementById('exportBtn').onclick = () => {
-      let csv = "\uFEFF編號,單位名稱,類別,次分類,鄉鎮市,主要路段,會址,負責人,聯絡電話,OA設備需求評估,最新拜訪日期,洽談階段,接洽窗口,洽談筆記,下次待辦\n";
+      let csv = '\uFEFF' + [
+        '編號', '單位名稱', '類別', '次分類', '鄉鎮市', '主要路段', '會址',
+        '負責人', '聯絡電話', 'OA設備需求評估', '最新拜訪日期', '洽談階段',
+        '接洽窗口', '洽談筆記', '下次待辦'
+      ].join(',') + String.fromCharCode(10);
 
       TAITUNG_DB.units.forEach(u => {
         const log = visitStore[u.id] || {};
@@ -1315,7 +1319,7 @@ html_template = '''<!DOCTYPE html>
           `"${(log.notes || '').replace(/"/g, '""')}"`,
           `"${(log.follow_up || '').replace(/"/g, '""')}"`
         ];
-        csv += row.join(",") + "\n";
+        csv += row.join(",") + String.fromCharCode(10);
       });
 
       const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
