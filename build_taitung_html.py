@@ -42,19 +42,19 @@ html_template = '''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>臺東協會與文健站·事務設備巡訪地圖</title>
+  <title>臺東協會與文健站拜訪地圖</title>
   <meta name="application-name" content="臺東協會與文健站外勤地圖">
-  <meta name="apple-mobile-web-app-title" content="臺東文健站外勤">
+  <meta name="apple-mobile-web-app-title" content="臺東外勤拜訪">
   <meta name="theme-color" content="#0F172A">
 
   <!-- SEO & Social Share Preview -->
-  <meta name="description" content="臺東縣立案協會與原住民文化健康站(文健站)事務設備外勤巡訪地圖。專為 OA 事務設備、影印機租賃、印表機、弱電監視與辦公設備打造。">
-  <meta property="og:title" content="臺東協會與文健站·事務設備巡訪地圖">
-  <meta property="og:description" content="收錄臺東 16 鄉鎮市 700+ 家立案協會與原住民文化健康站，支援同路巡訪快篩、一鍵 Google 導航、電話直撥與 OA 拜訪管理。">
+  <meta name="description" content="臺東縣立案協會與原住民文化健康站(文健站)外勤拜訪地圖。收錄臺東 16 鄉鎮市 700+ 家立案協會與原住民文化健康站。">
+  <meta property="og:title" content="臺東協會與文健站拜訪地圖">
+  <meta property="og:description" content="收錄臺東 16 鄉鎮市 700+ 家立案協會與原住民文化健康站，支援同路巡訪快篩、一鍵 Google 導航、電話直撥與拜訪紀錄管理。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gyuyu2002-jeff.github.io/taitung-field-map/">
   <meta property="og:image" content="https://gyuyu2002-jeff.github.io/taitung-field-map/apple-touch-icon.png">
-  <meta property="og:site_name" content="臺東協會與文健站·事務設備巡訪地圖">
+  <meta property="og:site_name" content="臺東協會與文健站拜訪地圖">
 
   <!-- Favicons -->
   <link rel="shortcut icon" type="image/png" href="__B64_32_URI__">
@@ -498,13 +498,14 @@ html_template = '''<!DOCTYPE html>
       align-items: flex-start;
       gap: 4px;
     }
-    .oa-tier-pill {
+    .unit-subcat-pill, .oa-tier-pill {
       font-size: 0.72rem;
-      padding: 2px 6px;
+      padding: 2px 7px;
       border-radius: 4px;
       font-weight: 700;
-      background: #FEF3C7;
-      color: #B45309;
+      background: #F1F5F9;
+      color: #475569;
+      border: 1px solid #E2E8F0;
       align-self: flex-start;
     }
     .visit-summary-box {
@@ -627,12 +628,49 @@ html_template = '''<!DOCTYPE html>
       background: #F8FAFC;
       cursor: pointer;
       font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.15s;
+      user-select: none;
+    }
+    .stage-chip:hover {
+      background: #E2E8F0;
     }
     .stage-chip.active {
       background: #0D9488;
       border-color: #0D9488;
       color: white;
       font-weight: 700;
+    }
+    .stage-chip.custom-stage {
+      border: 1px dashed #0D9488;
+      background: #F0FDFA;
+      color: #0F766E;
+    }
+    .stage-chip.custom-stage.active {
+      background: #0D9488;
+      color: white;
+    }
+    .del-stage-btn {
+      border: none;
+      background: none;
+      font-size: 14px;
+      line-height: 1;
+      cursor: pointer;
+      color: #94A3B8;
+      border-radius: 50%;
+      padding: 0 3px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .stage-chip.active .del-stage-btn {
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .del-stage-btn:hover {
+      color: #EF4444 !important;
+      background: rgba(239, 68, 68, 0.15);
     }
     .modal-footer {
       padding: 12px 18px;
@@ -697,8 +735,8 @@ html_template = '''<!DOCTYPE html>
       <div class="brand-group">
         <div class="brand-icon">🏢</div>
         <div>
-          <div class="brand-title">臺東協會與文健站·事務設備巡訪地圖</div>
-          <div class="brand-subtitle">專為 OA 事務設備（影印機租賃、印表機、碎紙機、弱電監視、電腦總機）打造之外勤巡訪系統</div>
+          <div class="brand-title">臺東協會與文健站拜訪地圖</div>
+          <div class="brand-subtitle">立案社會團體 · 原住民文化健康站 · 外勤拜訪管理系統</div>
         </div>
       </div>
       <div class="header-actions">
@@ -745,12 +783,11 @@ html_template = '''<!DOCTYPE html>
         <span class="search-icon">🔍</span>
         <input type="text" id="searchInput" class="search-input" placeholder="搜尋單位名稱、理事長/站長姓名、電話、路段、部落、字號...">
       </div>
-      <div class="quick-filter-group" id="oaTierFilter">
-        <button class="quick-chip active" data-oa="全部">全部需求</button>
-        <button class="quick-chip" data-oa="高印量">⭐ 高印量潛力戶</button>
-        <button class="quick-chip" data-oa="複合機">🖨️ A3/A4 複合機</button>
-        <button class="quick-chip" data-oa="弱電">💻 弱電/監控</button>
-        <button class="quick-chip" data-oa="耗材">📄 耗材租約</button>
+      <div class="quick-filter-group" id="visitStatusFilter">
+        <button class="quick-chip active" data-status="全部">全部單位</button>
+        <button class="quick-chip" data-status="待拜訪">○ 待拜訪 (<span id="unvisitedCount">0</span>)</button>
+        <button class="quick-chip" data-status="已拜訪">✓ 已拜訪 (<span id="visitedCount">0</span>)</button>
+        <button class="quick-chip" data-status="成交簽約">🎉 成交簽約</button>
       </div>
     </div>
     <!-- 同路 / 同部落巡訪快捷快篩 -->
@@ -795,7 +832,7 @@ html_template = '''<!DOCTYPE html>
   <div class="modal-backdrop" id="visitModal">
     <div class="modal-box">
       <div class="modal-header">
-        <div class="modal-title" id="visitModalTitle">📋 OA 事務設備拜訪紀錄</div>
+        <div class="modal-title" id="visitModalTitle">📋 外勤拜訪紀錄</div>
         <button class="modal-close" onclick="closeVisitModal()">&times;</button>
       </div>
       <div class="modal-body">
@@ -806,16 +843,12 @@ html_template = '''<!DOCTYPE html>
         </div>
 
         <div class="form-group">
-          <label class="form-label">🎯 洽談階段進度</label>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+            <label class="form-label" style="margin:0;">🎯 拜訪階段進度</label>
+            <button type="button" class="btn" onclick="addCustomStagePrompt()" style="padding:2px 8px; font-size:0.75rem; border:1px dashed #0D9488; color:#0D9488; background:#F0FDFA; border-radius:4px; cursor:pointer;">➕ 新增自訂選項</button>
+          </div>
           <div class="stage-chips" id="stageChips">
-            <span class="stage-chip active" data-stage="初次拜訪/遞名片">初次拜訪/遞名片</span>
-            <span class="stage-chip" data-stage="掌握現有機型/印量">掌握現有機型/印量</span>
-            <span class="stage-chip" data-stage="提供租賃報價單">提供租賃報價單</span>
-            <span class="stage-chip" data-stage="樣機展示/體驗試用">樣機展示/體驗試用</span>
-            <span class="stage-chip" data-stage="成交簽約">🎉 成交簽約</span>
-            <span class="stage-chip" data-stage="定期抄錶維護/送耗材">定期抄錶/送耗材</span>
-            <span class="stage-chip" data-stage="租約未到期(預約回訪)">租約未到期(預約回訪)</span>
-            <span class="stage-chip" data-stage="暫無需求">暫無需求</span>
+            <!-- 動態生成預設與常駐自訂選項 -->
           </div>
         </div>
 
@@ -825,13 +858,13 @@ html_template = '''<!DOCTYPE html>
         </div>
 
         <div class="form-group">
-          <label class="form-label">💬 事務設備現況與需求筆記 (OA Notes)</label>
-          <textarea id="visitNotes" class="form-control" rows="3" placeholder="例：現有機型老舊常卡紙、每月黑白約2500張彩色500張、現有合約到今年11月、評估升級高階雙面掃描機型..."></textarea>
+          <label class="form-label">💬 拜訪紀錄</label>
+          <textarea id="visitNotes" class="form-control" rows="3" placeholder="例：拜訪負責人討論業務合作、了解目前作業流程與近期活動規劃、反應良好預計下月安排拜訪..."></textarea>
         </div>
 
         <div class="form-group">
           <label class="form-label">⏰ 下次預計待辦與回訪日</label>
-          <input type="text" id="visitFollowUp" class="form-control" placeholder="例：下週二送報價單、11/15帶碳粉試用包拜訪">
+          <input type="text" id="visitFollowUp" class="form-control" placeholder="例：下週二送正式資料、11/15安排拜訪追蹤...">
         </div>
 
         <div class="form-group">
@@ -873,6 +906,37 @@ html_template = '''<!DOCTYPE html>
 
     // 本機 CRM 儲存 Key
     const STORAGE_KEY = 'taitung_oa_field_logs_v1';
+    const CUSTOM_STAGES_KEY = 'taitung_custom_stages_v2';
+
+    // 預設拜訪進度（標準外勤業務階段，無事務機口吻）
+    const DEFAULT_STAGES = [
+      "初次拜訪/遞名片",
+      "了解需求/建立關係",
+      "提供方案與報價",
+      "方案說明/展示",
+      "🎉 成交簽約",
+      "定期拜訪/維護",
+      "預約下次拜訪",
+      "暫無需求"
+    ];
+
+    function getCustomStages() {
+      try {
+        const raw = localStorage.getItem(CUSTOM_STAGES_KEY);
+        if (raw) {
+          const arr = JSON.parse(raw);
+          if (Array.isArray(arr)) return arr;
+        }
+      } catch(e) {}
+      return [];
+    }
+
+    function saveCustomStages(stages) {
+      try {
+        localStorage.setItem(CUSTOM_STAGES_KEY, JSON.stringify(stages));
+      } catch(e) {}
+    }
+
     let visitStore = {};
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -893,7 +957,7 @@ html_template = '''<!DOCTYPE html>
     let currentZone = "全部";
     let currentTownship = "全部";
     let currentCategory = "全部"; // 全部, 原住民文化健康站, 社會團體與人民團體
-    let currentOaTier = "全部";
+    let currentVisitStatus = "全部"; // 全部, 待拜訪, 已拜訪, 成交簽約
     let currentStreet = "全部";
     let currentSearch = "";
     let activeUnitId = null;
@@ -1044,15 +1108,31 @@ html_template = '''<!DOCTYPE html>
       assBtn.style.opacity = (currentCategory === "全部" || currentCategory === "社會團體與人民團體") ? "1" : "0.5";
     }
 
-    // OA 需求快篩
-    document.getElementById('oaTierFilter').addEventListener('click', (e) => {
+    // 拜訪進度快篩
+    document.getElementById('visitStatusFilter').addEventListener('click', (e) => {
       const btn = e.target.closest('.quick-chip');
       if (!btn) return;
-      document.querySelectorAll('#oaTierFilter .quick-chip').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('#visitStatusFilter .quick-chip').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      currentOaTier = btn.dataset.oa;
+      currentVisitStatus = btn.dataset.status;
       filterAndRender();
     });
+
+    function updateVisitFilterCounts() {
+      let visited = 0;
+      let unvisited = 0;
+      TAITUNG_DB.units.forEach(u => {
+        if (visitStore[u.id] && visitStore[u.id].latest_date) {
+          visited++;
+        } else {
+          unvisited++;
+        }
+      });
+      const unEl = document.getElementById('unvisitedCount');
+      const vEl = document.getElementById('visitedCount');
+      if (unEl) unEl.textContent = unvisited;
+      if (vEl) vEl.textContent = visited;
+    }
 
     // 搜尋輸入監聽
     document.getElementById('searchInput').addEventListener('input', (e) => {
@@ -1069,12 +1149,13 @@ html_template = '''<!DOCTYPE html>
         if (currentTownship !== "全部" && item.township !== currentTownship) return false;
         // 類別過濾
         if (currentCategory !== "全部" && item.category !== currentCategory) return false;
-        // OA 需求過濾
-        if (currentOaTier !== "全部") {
-          if (currentOaTier === "高印量" && !item.oa_tier.includes("高印量")) return false;
-          if (currentOaTier === "複合機" && !item.oa_tier.includes("複合機")) return false;
-          if (currentOaTier === "弱電" && !item.oa_tier.includes("弱電")) return false;
-          if (currentOaTier === "耗材" && !item.oa_tier.includes("耗材")) return false;
+        // 拜訪進度過濾
+        if (currentVisitStatus !== "全部") {
+          const log = visitStore[item.id] || {};
+          const hasVisited = !!log.latest_date;
+          if (currentVisitStatus === "待拜訪" && hasVisited) return false;
+          if (currentVisitStatus === "已拜訪" && !hasVisited) return false;
+          if (currentVisitStatus === "成交簽約" && log.stage !== "成交簽約") return false;
         }
         // 同路段/同部落過濾
         if (currentStreet !== "全部" && item.street !== currentStreet) return false;
@@ -1121,6 +1202,7 @@ html_template = '''<!DOCTYPE html>
       document.getElementById('filteredCount').textContent = currentUnits.length;
       displayedCount = 60;
 
+      updateVisitFilterCounts();
       renderStreetTags(currentUnits);
       renderCards();
       renderMarkers();
@@ -1162,8 +1244,8 @@ html_template = '''<!DOCTYPE html>
           </div>
           <div class="card-address">🏢 ${item.address}</div>
           <div class="card-meta-line">
-            <span class="oa-tier-pill">${item.oa_tier}</span>
-            ${item.sponsor ? `<span style="font-size:0.72rem; color:var(--muted);">承辦：${item.sponsor}</span>` : ''}
+            <span class="unit-subcat-pill">${item.sub_category || (isWjs ? '部落文化健康站' : '立案社會團體')}</span>
+            ${item.sponsor ? `<span style="font-size:0.72rem; color:var(--muted);">主管：${item.sponsor}</span>` : ''}
           </div>
           <div class="visit-summary-box">
             <span>📅 ${latestVisit}</span>
@@ -1268,6 +1350,82 @@ html_template = '''<!DOCTYPE html>
     // CRM 彈窗管理
     let activeLogUnit = null;
 
+    // 渲染常駐與自訂拜訪選項
+    function renderStageChips(selectedStage) {
+      const container = document.getElementById('stageChips');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const customStages = getCustomStages();
+      const allStages = [...DEFAULT_STAGES, ...customStages];
+      let activeStage = selectedStage || '初次拜訪/遞名片';
+      if (!allStages.includes(activeStage)) {
+        allStages.push(activeStage);
+      }
+
+      allStages.forEach(stage => {
+        const isCustom = customStages.includes(stage);
+        const chip = document.createElement('span');
+        chip.className = `stage-chip ${isCustom ? 'custom-stage' : ''} ${stage === activeStage ? 'active' : ''}`;
+        chip.dataset.stage = stage;
+
+        const textSpan = document.createElement('span');
+        textSpan.textContent = stage;
+        chip.appendChild(textSpan);
+
+        if (isCustom) {
+          const delBtn = document.createElement('button');
+          delBtn.type = 'button';
+          delBtn.className = 'del-stage-btn';
+          delBtn.innerHTML = '&times;';
+          delBtn.title = '刪除此自訂選項';
+          delBtn.onclick = (e) => {
+            e.stopPropagation();
+            removeCustomStage(stage);
+          };
+          chip.appendChild(delBtn);
+        }
+
+        chip.onclick = () => selectStage(stage);
+        container.appendChild(chip);
+      });
+    }
+
+    function selectStage(stage) {
+      document.querySelectorAll('#stageChips .stage-chip').forEach(c => {
+        c.classList.toggle('active', c.dataset.stage === stage);
+      });
+    }
+
+    function addCustomStagePrompt() {
+      const name = prompt('請輸入要新增的常駐拜訪選項（將永久儲存於此瀏覽器）：');
+      if (!name) return;
+      const trimmed = name.trim();
+      if (!trimmed) return;
+
+      const customStages = getCustomStages();
+      if (DEFAULT_STAGES.includes(trimmed) || customStages.includes(trimmed)) {
+        alert('此選項已存在！');
+        selectStage(trimmed);
+        return;
+      }
+
+      customStages.push(trimmed);
+      saveCustomStages(customStages);
+      renderStageChips(trimmed);
+    }
+
+    function removeCustomStage(stage) {
+      if (!confirm(`確定要刪除自訂選項「${stage}」嗎？\n（已儲存的單位歷史紀錄不受影響）`)) return;
+      let customStages = getCustomStages();
+      customStages = customStages.filter(s => s !== stage);
+      saveCustomStages(customStages);
+
+      const activeChip = document.querySelector('#stageChips .stage-chip.active');
+      const currentSelected = (activeChip && activeChip.dataset.stage !== stage) ? activeChip.dataset.stage : DEFAULT_STAGES[0];
+      renderStageChips(currentSelected);
+    }
+
     function openVisitModal(unitId) {
       const item = TAITUNG_DB.units.find(u => u.id === unitId);
       if (!item) return;
@@ -1279,9 +1437,7 @@ html_template = '''<!DOCTYPE html>
       const log = visitStore[item.id] || {};
       const currentStage = log.stage || '初次拜訪/遞名片';
 
-      document.querySelectorAll('#stageChips .stage-chip').forEach(c => {
-        c.classList.toggle('active', c.dataset.stage === currentStage);
-      });
+      renderStageChips(currentStage);
 
       document.getElementById('visitContact').value = log.contact || item.leader || '';
       document.getElementById('visitNotes').value = log.notes || '';
@@ -1309,14 +1465,6 @@ html_template = '''<!DOCTYPE html>
       document.getElementById('visitModal').style.display = 'none';
       activeLogUnit = null;
     }
-
-    // 階段標籤選擇
-    document.getElementById('stageChips').addEventListener('click', (e) => {
-      const chip = e.target.closest('.stage-chip');
-      if (!chip) return;
-      document.querySelectorAll('#stageChips .stage-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-    });
 
     // 儲存拜訪紀錄
     function saveVisitRecord() {
@@ -1351,6 +1499,7 @@ html_template = '''<!DOCTYPE html>
       saveStore();
       closeVisitModal();
       renderCards();
+      updateVisitFilterCounts();
     }
 
     // 統計彈窗
@@ -1362,7 +1511,7 @@ html_template = '''<!DOCTYPE html>
       for (const log of Object.values(visitStore)) {
         if (log.latest_date) visitedCount++;
         if (log.stage === '成交簽約') dealCount++;
-        if (log.stage === '提供租賃報價單') quoteCount++;
+        if (log.stage && (log.stage.includes('報價') || log.stage.includes('方案'))) quoteCount++;
       }
 
       const total = TAITUNG_DB.total_units;
@@ -1380,7 +1529,7 @@ html_template = '''<!DOCTYPE html>
           </div>
           <div style="background:#FEF3C7; border:1px solid #FDE68A; padding:12px; border-radius:8px; text-align:center;">
             <div style="font-size:1.6rem; font-weight:900; color:#D97706;">${quoteCount}</div>
-            <div style="font-size:0.75rem; color:#B45309; font-weight:700;">已提供報價單追蹤中</div>
+            <div style="font-size:0.75rem; color:#B45309; font-weight:700;">已提供方案/報價追蹤中</div>
           </div>
           <div style="background:#EEF2FF; border:1px solid #C7D2FE; padding:12px; border-radius:8px; text-align:center;">
             <div style="font-size:1.6rem; font-weight:900; color:#4F46E5;">${TAITUNG_DB.wjs_units} / ${TAITUNG_DB.ass_units}</div>
@@ -1388,7 +1537,7 @@ html_template = '''<!DOCTYPE html>
           </div>
         </div>
         <div style="font-size:0.78rem; color:var(--muted); line-height:1.5;">
-          💡 <strong>外勤提示</strong>：原住民文化健康站多為全日駐站行政，印量集中於平日上午與下午文書作業；協會則於理監事會議或各季活動前夕有大量彩色複印與租賃需求。
+          💡 <strong>外勤提示</strong>：原住民文化健康站多為平日全日駐站服務，建議於上午活動或下午文書時段拜訪；立案協會多於平日下午或理監事例會時有專職幹事駐點。
         </div>
       `;
       document.getElementById('statsModal').style.display = 'flex';
@@ -1402,8 +1551,8 @@ html_template = '''<!DOCTYPE html>
     document.getElementById('exportBtn').onclick = () => {
       let csv = '\uFEFF' + [
         '編號', '單位名稱', '類別', '次分類', '鄉鎮市', '主要路段', '會址',
-        '負責人', '聯絡電話', 'OA設備需求評估', '最新拜訪日期', '洽談階段',
-        '接洽窗口', '洽談筆記', '下次待辦'
+        '負責人', '聯絡電話', '最新拜訪日期', '拜訪進度階段',
+        '接洽窗口', '拜訪紀錄', '下次預計待辦與回訪日'
       ].join(',') + String.fromCharCode(10);
 
       TAITUNG_DB.units.forEach(u => {
@@ -1418,9 +1567,8 @@ html_template = '''<!DOCTYPE html>
           `"${u.address.replace(/"/g, '""')}"`,
           u.leader || "",
           u.phone || "",
-          `"${u.oa_tier}"`,
           log.latest_date || "",
-          log.stage || "",
+          `"${(log.stage || '').replace(/"/g, '""')}"`,
           `"${(log.contact || '').replace(/"/g, '""')}"`,
           `"${(log.notes || '').replace(/"/g, '""')}"`,
           `"${(log.follow_up || '').replace(/"/g, '""')}"`
@@ -1507,7 +1655,7 @@ html_template = '''<!DOCTYPE html>
       initMap();
       renderTownshipBar();
       filterAndRender();
-      console.log("臺東協會與文健站事務設備巡訪系統已成功啟動！");
+      console.log("臺東協會與文健站拜訪管理系統已成功啟動！");
     });
   </script>
 </body>
