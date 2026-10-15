@@ -1,0 +1,70 @@
+name: 每月 1 號定時自動更新臺東協會與文健站資料 (Monthly Auto Update)
+
+on:
+  schedule:
+    # 每月 1 號 台灣時間上午 09:00 (UTC 01:00) 自動執行
+    - cron: '0 1 1 * *'
+  workflow_dispatch:
+    # 支援隨時在 GitHub 網頁一鍵手動觸發測試
+    inputs:
+      force_update:
+        description: '是否強制重新全量審計與編譯'
+        required: false
+        default: 'true'
+        type: boolean
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 檢出儲存庫程式碼 (Checkout)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 設定 Python 3.11 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安裝相依套件 (Pillow)
+        run: |
+          pip install Pillow requests
+
+      - name: 執行政府公開資料同步與最新名冊檢查
+        run: |
+          python scripts/update_taitung_data.py
+
+      - name: 重新編譯生成單頁地圖應用 (index.html)
+        run: |
+          python build_taitung_html.py
+
+      - name: 檢查資料庫變更並自動提交推送
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          if [[ -n $(git status -s) ]]; then
+            echo "檢測到資料更新，準備自動 Commit & Push..."
+            git add -A
+            git commit -m "chore(bot): 每月 1 號定時自動更新臺東協會與文健站資料庫 ($(date +'%Y-%m'))"
+            git push origin main
+            echo "✅ 已成功推送更新至 GitHub！GitHub Pages 即將自動部署。"
+          else
+            echo "ℹ️ 目前臺東協會與文健站資料皆為最新，無須重複提交。"
+          fi
+
+      - name: 發送每月更新通報郵件
+        if: env.SMTP_USER != ''
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_SERVER: "smtp.gmail.com"
+          SMTP_PORT: 465
+        run: |
+          python send_monthly_report.py
