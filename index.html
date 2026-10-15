@@ -143,6 +143,95 @@
     .btn-emerald:hover { background: #047857; }
     .btn-amber { background: #D97706; border-color: #D97706; color: white; }
 
+    .header-btn-divider {
+      width: 1px;
+      height: 24px;
+      background: rgba(255, 255, 255, 0.22);
+      margin: 0 4px;
+    }
+
+    /* Enhanced Category Toggle Segmented Switch (高對比醒目切換鈕) */
+    .category-toggle-group {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(15, 23, 42, 0.75);
+      padding: 3px;
+      border-radius: 9px;
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+      gap: 3px;
+    }
+    .cat-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 13px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border-radius: 6px;
+      border: 1.5px solid transparent;
+      background: transparent;
+      color: #94A3B8;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      white-space: nowrap;
+      user-select: none;
+    }
+    .cat-toggle-btn:hover {
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.12);
+    }
+    /* Active: 全部單位 (亮白醒目高對比) */
+    .cat-toggle-btn.active.cat-all {
+      background: #FFFFFF !important;
+      color: #0F172A !important;
+      border-color: #FFFFFF !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+      font-weight: 900;
+    }
+    .cat-toggle-btn.active.cat-all .cat-pill-badge {
+      background: #0F172A !important;
+      color: #FFFFFF !important;
+    }
+    /* Active: 文健站 (強烈翡翠綠高亮發光，對齊地圖圖釘) */
+    .cat-toggle-btn.active.cat-wjs {
+      background: linear-gradient(135deg, #059669 0%, #10B981 100%) !important;
+      color: #FFFFFF !important;
+      border-color: #6EE7B7 !important;
+      box-shadow: 0 0 16px rgba(16, 185, 129, 0.65), 0 2px 6px rgba(0, 0, 0, 0.35);
+      font-weight: 900;
+      transform: translateY(-1px);
+    }
+    .cat-toggle-btn.active.cat-wjs .cat-pill-badge {
+      background: rgba(0, 0, 0, 0.35) !important;
+      color: #FFFFFF !important;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    /* Active: 協會團體 (強烈寶石靛藍高亮發光，對齊地圖圖釘) */
+    .cat-toggle-btn.active.cat-ass {
+      background: linear-gradient(135deg, #4338CA 0%, #6366F1 100%) !important;
+      color: #FFFFFF !important;
+      border-color: #A5B4FC !important;
+      box-shadow: 0 0 16px rgba(99, 102, 241, 0.65), 0 2px 6px rgba(0, 0, 0, 0.35);
+      font-weight: 900;
+      transform: translateY(-1px);
+    }
+    .cat-toggle-btn.active.cat-ass .cat-pill-badge {
+      background: rgba(0, 0, 0, 0.35) !important;
+      color: #FFFFFF !important;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    /* 計數膠囊 */
+    .cat-pill-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 1px 7px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #CBD5E1;
+      transition: all 0.2s;
+    }
+
     /* Metadata Info Bar */
     .meta-bar {
       display: flex;
@@ -701,8 +790,21 @@
         </div>
       </div>
       <div class="header-actions">
-        <button class="btn btn-emerald" id="filterWjsBtn">🏡 文健站 (<span id="totalWjsCount">114</span>)</button>
-        <button class="btn btn-teal" id="filterAssBtn">🏛️ 協會團體 (<span id="totalAssCount">587</span>)</button>
+        <div class="category-toggle-group">
+          <button class="cat-toggle-btn active cat-all" id="filterAllBtn" onclick="setCategory('全部')">
+            <span>🌟 全部</span>
+            <span class="cat-pill-badge" id="totalAllCount">701</span>
+          </button>
+          <button class="cat-toggle-btn cat-wjs" id="filterWjsBtn" onclick="setCategory('原住民文化健康站')">
+            <span>🏡 文健站</span>
+            <span class="cat-pill-badge" id="totalWjsCount">114</span>
+          </button>
+          <button class="cat-toggle-btn cat-ass" id="filterAssBtn" onclick="setCategory('社會團體與人民團體')">
+            <span>🏛️ 協會團體</span>
+            <span class="cat-pill-badge" id="totalAssCount">587</span>
+          </button>
+        </div>
+        <div class="header-btn-divider"></div>
         <button class="btn" id="exportBtn">📤 匯出記錄 (CSV)</button>
         <button class="btn" id="importBtn">📥 匯入</button>
         <button class="btn" id="statsBtn">📊 統計</button>
@@ -1056,23 +1158,25 @@
       filterAndRender();
     }
 
-    // 類別快篩 (文健站 / 協會)
-    document.getElementById('filterWjsBtn').onclick = () => {
-      currentCategory = currentCategory === "原住民文化健康站" ? "全部" : "原住民文化健康站";
+    // 類別快篩 (全部 / 文健站 / 協會)
+    function setCategory(cat) {
+      if (currentCategory === cat && cat !== "全部") {
+        currentCategory = "全部";
+      } else {
+        currentCategory = cat;
+      }
       updateCategoryButtons();
       filterAndRender();
-    };
-    document.getElementById('filterAssBtn').onclick = () => {
-      currentCategory = currentCategory === "社會團體與人民團體" ? "全部" : "社會團體與人民團體";
-      updateCategoryButtons();
-      filterAndRender();
-    };
+    }
 
     function updateCategoryButtons() {
+      const allBtn = document.getElementById('filterAllBtn');
       const wjsBtn = document.getElementById('filterWjsBtn');
       const assBtn = document.getElementById('filterAssBtn');
-      wjsBtn.style.opacity = (currentCategory === "全部" || currentCategory === "原住民文化健康站") ? "1" : "0.5";
-      assBtn.style.opacity = (currentCategory === "全部" || currentCategory === "社會團體與人民團體") ? "1" : "0.5";
+
+      if (allBtn) allBtn.classList.toggle('active', currentCategory === "全部");
+      if (wjsBtn) wjsBtn.classList.toggle('active', currentCategory === "原住民文化健康站");
+      if (assBtn) assBtn.classList.toggle('active', currentCategory === "社會團體與人民團體");
     }
 
     // 拜訪進度快篩
@@ -1622,6 +1726,16 @@
     window.addEventListener('DOMContentLoaded', () => {
       initMap();
       renderTownshipBar();
+      updateVisitFilterCounts();
+      updateCategoryButtons();
+
+      const allCountEl = document.getElementById('totalAllCount');
+      const wjsCountEl = document.getElementById('totalWjsCount');
+      const assCountEl = document.getElementById('totalAssCount');
+      if (allCountEl) allCountEl.textContent = TAITUNG_DB.total_units;
+      if (wjsCountEl) wjsCountEl.textContent = TAITUNG_DB.wjs_units;
+      if (assCountEl) assCountEl.textContent = TAITUNG_DB.ass_units;
+
       filterAndRender();
       console.log("臺東協會與文健站拜訪管理系統已成功啟動！");
     });
