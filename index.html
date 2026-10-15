@@ -331,6 +331,66 @@
     }
     #map { width: 100%; height: 100%; }
 
+    /* Auto Labels on Zoom (放大自動顯示站點名稱標籤) */
+    .leaflet-tooltip.marker-auto-tooltip {
+      display: none !important;
+      opacity: 0 !important;
+      background: #FFFFFF;
+      color: #0F172A;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18);
+      font-family: inherit;
+      pointer-events: auto;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity 0.15s ease;
+      z-index: 600;
+    }
+
+    .leaflet-tooltip.marker-auto-tooltip.tooltip-wjs {
+      border: 1.5px solid #059669;
+      color: #065F46;
+      background: #F0FDF4;
+    }
+
+    .leaflet-tooltip.marker-auto-tooltip.tooltip-ass {
+      border: 1.5px solid #4F46E5;
+      color: #3730A3;
+      background: #EEF2FF;
+    }
+
+    .leaflet-tooltip.marker-auto-tooltip::before {
+      border-top-color: #FFFFFF;
+    }
+
+    #map.show-auto-labels .leaflet-tooltip.marker-auto-tooltip {
+      display: block !important;
+      opacity: 1 !important;
+    }
+
+    .map-zoom-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      z-index: 900;
+      background: rgba(15, 23, 42, 0.85);
+      color: #F8FAFC;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      pointer-events: none;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.3s;
+    }
+
     /* Unit Card */
     .unit-card {
       background: var(--card-bg);
@@ -679,6 +739,7 @@
     <!-- Right Map Pane -->
     <div class="map-pane" id="mapPane">
       <div id="map"></div>
+      <div class="map-zoom-hint" id="mapZoomHint">🔍 放大至鄉鎮街區 (>=13級) 自動浮現站名</div>
     </div>
   </div>
 
@@ -816,6 +877,32 @@
       }).addTo(map);
 
       markersLayer = L.layerGroup().addTo(map);
+
+      // 縮放地圖自動常駐浮現站點名稱標籤（Zoom >= 13 免點選自動顯示）
+      function updateLabels() {
+        if (!map) return;
+        const zoom = map.getZoom();
+        const mapEl = document.getElementById('map');
+        const hintEl = document.getElementById('mapZoomHint');
+        const isZoomed = zoom >= 13;
+        
+        mapEl.classList.toggle('show-auto-labels', isZoomed);
+        if (hintEl) {
+          if (isZoomed) {
+            hintEl.innerHTML = `🏷️ 站名常駐顯示中 (縮放: ${zoom}級)`;
+            hintEl.style.background = 'rgba(5, 150, 105, 0.9)';
+          } else {
+            hintEl.innerHTML = `🔍 放大至鄉鎮街區 (>=13級) 自動浮現站名`;
+            hintEl.style.background = 'rgba(15, 23, 42, 0.85)';
+          }
+        }
+      }
+
+      map.on('zoomend', updateLabels);
+      map.on('zoom', updateLabels);
+      map.on('moveend', updateLabels);
+
+      setTimeout(updateLabels, 300);
     }
 
     // 自訂 Marker 圖標
@@ -1063,20 +1150,34 @@
       }
     });
 
-    // 渲染地圖圖釘 (按需渲染)
+    // 渲染地圖圖釘 (全量渲染，放大自動浮現名稱)
     function renderMarkers() {
       markersLayer.clearLayers();
-      const limit = Math.min(currentUnits.length, 300);
+      const limit = currentUnits.length;
 
       for (let i = 0; i < limit; i++) {
         const item = currentUnits[i];
         if (!item.lat || !item.lng) continue;
 
+        const isWjs = item.category === "原住民文化健康站";
         const marker = L.marker([item.lat, item.lng], {
           icon: createCustomIcon(item.category)
         });
 
-        const isWjs = item.category === "原住民文化健康站";
+        // 綁定常駐標籤（放大時透過 CSS .show-auto-labels 自動浮現，免點選）
+        const tooltipText = isWjs ? `🏡 ${item.name}` : `🏛️ ${item.name}`;
+        marker.bindTooltip(tooltipText, {
+          permanent: true,
+          direction: 'top',
+          offset: [0, -28],
+          className: isWjs ? 'marker-auto-tooltip tooltip-wjs' : 'marker-auto-tooltip tooltip-ass'
+        });
+
+        // 點擊地圖圖釘時聯動卡片與聚焦
+        marker.on('click', () => {
+          focusUnit(item, false);
+        });
+
         const popupHtml = `
           <div style="font-family:'Noto Sans TC',sans-serif; min-width:210px;">
             <div style="font-weight:800; font-size:0.95rem; color:#0F172A; margin-bottom:4px;">
@@ -1105,13 +1206,18 @@
     }
 
     // 聚焦特定單位
-    function focusUnit(item) {
+    function focusUnit(item, fly = true) {
       activeUnitId = item.id;
       document.querySelectorAll('.unit-card').forEach(c => c.classList.remove('active-target'));
       const activeCard = document.getElementById(`card-${item.id}`);
-      if (activeCard) activeCard.classList.add('active-target');
+      if (activeCard) {
+        activeCard.classList.add('active-target');
+        activeCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
 
-      map.flyTo([item.lat, item.lng], 15, { duration: 0.8 });
+      if (fly) {
+        map.flyTo([item.lat, item.lng], 15, { duration: 0.8 });
+      }
     }
 
     // Google Maps 導航
