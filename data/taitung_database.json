@@ -1,0 +1,5024 @@
+{
+  "version": "2026.11.01",
+  "updated_at": "2026-11-01",
+  "public_data_policy": "township-only-v1",
+  "data_sources": [
+    "臺東縣政府民政處人民團體名冊",
+    "臺東縣政府社會處社區發展協會查詢名單",
+    "臺東縣政府原住民族行政處文健站核定清冊",
+    "原住民族委員會(CIP)文化健康站最新清冊"
+  ],
+  "township_coords": {
+    "臺東市": {
+      "lat": 22.76,
+      "lng": 121.14,
+      "zone": "市區生活圈"
+    },
+    "卑南鄉": {
+      "lat": 22.81,
+      "lng": 121.08,
+      "zone": "縱谷南端與近郊"
+    },
+    "延平鄉": {
+      "lat": 22.91,
+      "lng": 121.08,
+      "zone": "花東縱谷線"
+    },
+    "鹿野鄉": {
+      "lat": 22.91,
+      "lng": 121.14,
+      "zone": "花東縱谷線"
+    },
+    "關山鎮": {
+      "lat": 23.05,
+      "lng": 121.16,
+      "zone": "花東縱谷線"
+    },
+    "海端鄉": {
+      "lat": 23.1,
+      "lng": 121.14,
+      "zone": "花東縱谷線"
+    },
+    "池上鄉": {
+      "lat": 23.12,
+      "lng": 121.22,
+      "zone": "花東縱谷線"
+    },
+    "東河鄉": {
+      "lat": 22.97,
+      "lng": 121.3,
+      "zone": "東部海岸線"
+    },
+    "成功鎮": {
+      "lat": 23.1,
+      "lng": 121.38,
+      "zone": "東部海岸線"
+    },
+    "長濱鄉": {
+      "lat": 23.32,
+      "lng": 121.45,
+      "zone": "東部海岸線"
+    },
+    "太麻里鄉": {
+      "lat": 22.62,
+      "lng": 121.01,
+      "zone": "南迴山海線"
+    },
+    "金峰鄉": {
+      "lat": 22.6,
+      "lng": 120.97,
+      "zone": "南迴山海線"
+    },
+    "大武鄉": {
+      "lat": 22.34,
+      "lng": 120.89,
+      "zone": "南迴山海線"
+    },
+    "達仁鄉": {
+      "lat": 22.3,
+      "lng": 120.88,
+      "zone": "南迴山海線"
+    },
+    "綠島鄉": {
+      "lat": 22.66,
+      "lng": 121.49,
+      "zone": "離島專區"
+    },
+    "蘭嶼鄉": {
+      "lat": 22.06,
+      "lng": 121.55,
+      "zone": "離島專區"
+    }
+  },
+  "township_stats": {
+    "臺東市": 297,
+    "卑南鄉": 49,
+    "延平鄉": 20,
+    "鹿野鄉": 26,
+    "關山鎮": 26,
+    "海端鄉": 22,
+    "池上鄉": 29,
+    "東河鄉": 27,
+    "成功鎮": 42,
+    "長濱鄉": 15,
+    "太麻里鄉": 45,
+    "金峰鄉": 20,
+    "大武鄉": 29,
+    "達仁鄉": 26,
+    "綠島鄉": 13,
+    "蘭嶼鄉": 15
+  },
+  "total_units": 701,
+  "wjs_units": 114,
+  "ass_units": 587,
+  "units": [
+    {
+      "id": "TT-WJS-001",
+      "name": "馬蘭原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-002",
+      "name": "馬當原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-003",
+      "name": "寶桑原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-004",
+      "name": "新園原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-005",
+      "name": "利嘉部落文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-006",
+      "name": "卡大地布(知本)文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-007",
+      "name": "巴沙哇力原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-008",
+      "name": "阿美族文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-009",
+      "name": "伊濘原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-010",
+      "name": "富岡原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-011",
+      "name": "建和原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-WJS-012",
+      "name": "初鹿原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-WJS-013",
+      "name": "利吉原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-WJS-014",
+      "name": "賓朗原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-WJS-015",
+      "name": "美農原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-WJS-016",
+      "name": "太平原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-WJS-017",
+      "name": "東興(達魯瑪克)文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-WJS-018",
+      "name": "溫泉原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-WJS-019",
+      "name": "阿里擺原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-WJS-020",
+      "name": "泰安(大巴六九)文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-WJS-021",
+      "name": "嘉豐原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-WJS-022",
+      "name": "桃源原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-WJS-023",
+      "name": "武陵原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-WJS-024",
+      "name": "鸞山原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-WJS-025",
+      "name": "永康原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-WJS-026",
+      "name": "紅葉原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-WJS-027",
+      "name": "巴喜告原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-WJS-028",
+      "name": "永安原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-WJS-029",
+      "name": "瑞源原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-WJS-030",
+      "name": "瑞隆原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-WJS-031",
+      "name": "龍田原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-WJS-032",
+      "name": "和平原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-WJS-033",
+      "name": "寶華原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-WJS-034",
+      "name": "巴卡拉子文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-WJS-035",
+      "name": "鹿野部落文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-WJS-036",
+      "name": "電光原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-WJS-037",
+      "name": "德高原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-WJS-038",
+      "name": "月眉原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-WJS-039",
+      "name": "里壠原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-WJS-040",
+      "name": "加典原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-WJS-041",
+      "name": "新福原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-WJS-042",
+      "name": "初來原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-WJS-043",
+      "name": "海端原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-WJS-044",
+      "name": "加拿原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-WJS-045",
+      "name": "霧鹿原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-WJS-046",
+      "name": "利稻原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-WJS-047",
+      "name": "錦屏原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-WJS-048",
+      "name": "廣原原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-WJS-049",
+      "name": "福原原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-WJS-050",
+      "name": "萬安原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-WJS-051",
+      "name": "大埔原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-WJS-052",
+      "name": "慶豐原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-WJS-053",
+      "name": "富興原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-WJS-054",
+      "name": "陸安原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-WJS-055",
+      "name": "新興原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-WJS-056",
+      "name": "都蘭原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-WJS-057",
+      "name": "興昌原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-WJS-058",
+      "name": "東河原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-WJS-059",
+      "name": "北源原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-WJS-060",
+      "name": "泰源原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-WJS-061",
+      "name": "尚德原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-WJS-062",
+      "name": "隆昌原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-WJS-063",
+      "name": "阿度蘭原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-WJS-064",
+      "name": "比西里岸(白守蓮)文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-WJS-065",
+      "name": "都歷原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-WJS-066",
+      "name": "信義原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-WJS-067",
+      "name": "重安原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-WJS-068",
+      "name": "小馬原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-WJS-069",
+      "name": "宜灣原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-WJS-070",
+      "name": "和平原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-WJS-071",
+      "name": "美山原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-WJS-072",
+      "name": "民豐原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-WJS-073",
+      "name": "樟原原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-WJS-074",
+      "name": "長濱原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-WJS-075",
+      "name": "竹湖原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-WJS-076",
+      "name": "三間原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-WJS-077",
+      "name": "真柄原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-WJS-078",
+      "name": "寧埔原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-WJS-079",
+      "name": "忠勇原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-WJS-080",
+      "name": "大王原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-WJS-081",
+      "name": "新香蘭(拉勞蘭)文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-WJS-082",
+      "name": "多良原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-WJS-083",
+      "name": "大溪原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-WJS-084",
+      "name": "金崙原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-WJS-085",
+      "name": "溫泉(以琳)文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-WJS-086",
+      "name": "三和原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-WJS-087",
+      "name": "德其里原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-WJS-088",
+      "name": "嘉蘭原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-WJS-089",
+      "name": "正興原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-WJS-090",
+      "name": "賓茂原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-WJS-091",
+      "name": "歷坵原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-WJS-092",
+      "name": "新興原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-WJS-093",
+      "name": "卡阿魯灣文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-WJS-094",
+      "name": "大武原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-WJS-095",
+      "name": "尚武原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-WJS-096",
+      "name": "大鳥(笆札筏)文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-WJS-097",
+      "name": "愛國蒲(大竹)文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-WJS-098",
+      "name": "加津林原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-WJS-099",
+      "name": "加羅板原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-WJS-100",
+      "name": "安朔原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-WJS-101",
+      "name": "土坂原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-WJS-102",
+      "name": "臺坂原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-WJS-103",
+      "name": "森永原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-WJS-104",
+      "name": "新化原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-WJS-105",
+      "name": "南田原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-WJS-106",
+      "name": "拉里吧(啦哩吧)文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-WJS-107",
+      "name": "綠島南寮原住民與長青文健站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-WJS-108",
+      "name": "綠島公館關懷與文健據點",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-WJS-109",
+      "name": "椰油原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-WJS-110",
+      "name": "朗島原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-WJS-111",
+      "name": "東清原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-WJS-112",
+      "name": "野銀原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-WJS-113",
+      "name": "紅頭原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-WJS-114",
+      "name": "漁人原住民文化健康站",
+      "category": "原住民文化健康站",
+      "sub_category": "原民長照部落據點",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-NEW-001",
+      "name": "臺東縣數位創生永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-002",
+      "name": "臺東縣南迴地方創生促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-NEW-003",
+      "name": "臺東縣慢食與友善農業推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-NEW-004",
+      "name": "臺東縣縱谷客家青創文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-NEW-005",
+      "name": "臺東縣原住民族智慧農業推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-NEW-006",
+      "name": "臺東縣海洋永續藍碳發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-NEW-007",
+      "name": "臺東縣綠島海洋保育志工協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-NEW-008",
+      "name": "臺東縣南島陶藝美學創生協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-NEW-009",
+      "name": "臺東縣智慧辦公與雲端應用協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-010",
+      "name": "臺東縣原住民部落青年創業孵化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-011",
+      "name": "臺東縣長濱海風生活聚落發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-NEW-012",
+      "name": "臺東縣池上秋收文化藝術發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-NEW-013",
+      "name": "臺東縣達仁南田石地質景觀保育協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-NEW-014",
+      "name": "臺東縣金峰排灣傳統小米復育協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-NEW-015",
+      "name": "臺東縣大武山林生態旅遊推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-NEW-016",
+      "name": "臺東縣延平布農弓箭射藝傳承協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-NEW-017",
+      "name": "臺東縣東海岸觀光旅宿永續同盟協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-NEW-018",
+      "name": "臺東縣偏鄉高齡行動輔具與照護協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "醫療衛生",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-019",
+      "name": "臺東縣原鄉青少年程式教育發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-020",
+      "name": "臺東縣卑南溪水資源生態保育協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-NEW-021",
+      "name": "臺東縣縱谷單車運動休閒發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-NEW-022",
+      "name": "臺東縣蘭嶼拼板舟文化技藝傳承協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-NEW-023",
+      "name": "臺東縣太麻里金針產業升級促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-NEW-024",
+      "name": "臺東縣海端高山搜救與協作服務協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-NEW-025",
+      "name": "臺東縣原住民部落智慧長照暨文健支援協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-026",
+      "name": "臺東縣智慧物聯網農業應用協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-027",
+      "name": "臺東縣南迴公路行車安全與救援服務協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-NEW-028",
+      "name": "臺東縣池上大地餐桌與有機農業學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-NEW-029",
+      "name": "臺東縣長濱原鄉手作刺繡文創協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-NEW-030",
+      "name": "臺東縣知本溫泉區商業轉型與永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-NEW-031",
+      "name": "臺東縣延平青年布農農特產推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-NEW-032",
+      "name": "臺東縣達仁部落排灣文教青年關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-NEW-033",
+      "name": "臺東縣智慧辦公事務設備與數位轉型促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-034",
+      "name": "臺東縣偏鄉遠距數位教學與課後關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-035",
+      "name": "臺東縣東海岸衝浪運動與海洋安全推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-NEW-036",
+      "name": "臺東縣關山水稻無人機智慧代耕協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-NEW-037",
+      "name": "臺東縣金峰洛神花多元加工與產銷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-NEW-038",
+      "name": "臺東縣鹿野國際熱氣球觀光發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-NEW-039",
+      "name": "臺東縣蘭嶼達悟傳統文化教育推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-NEW-040",
+      "name": "臺東縣大武油芒超級食物推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-NEW-041",
+      "name": "臺東縣辦公自動化與弱電工程技術推展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-042",
+      "name": "臺東縣長照機構與健康站智慧設備租賃促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "醫療衛生",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-043",
+      "name": "臺東縣東台灣大健康生活與輔具應用學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-NEW-044",
+      "name": "臺東縣卑南原鄉綠色能源與循環經濟協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-NEW-045",
+      "name": "臺東縣成功鏢旗魚海洋文化保存協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-NEW-046",
+      "name": "臺東縣海端布農生態狩獵與山林守護協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-NEW-047",
+      "name": "臺東縣綠島蘭嶼雙島海洋綠能航運協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-NEW-048",
+      "name": "臺東縣偏鄉數位賦能與公共行政服務協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-001",
+      "name": "臺東縣成功鎮婦女聯盟",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-002",
+      "name": "臺東縣珍健康會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-003",
+      "name": "臺東縣手作藝術協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-004",
+      "name": "臺東縣金龍宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-005",
+      "name": "臺東縣都蘭山畫院學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-006",
+      "name": "臺東縣母嬰親善關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-007",
+      "name": "臺東縣RADD國際外語體驗教育發展學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-008",
+      "name": "臺東縣金虎爺會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-009",
+      "name": "臺東縣福德慈善會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-010",
+      "name": "臺東縣延平鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-011",
+      "name": "臺東縣產業創生推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-012",
+      "name": "臺東縣豪豬足球推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-013",
+      "name": "臺東縣同寮協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-014",
+      "name": "臺東縣大武鄉尚武天后宮大陳媽文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-015",
+      "name": "臺東縣海端鄉督瑪永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-016",
+      "name": "臺東縣七里橋人文關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-017",
+      "name": "臺東縣高坡Apapuro部落原住民文化促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-018",
+      "name": "臺東縣太陽Pacidal文化促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-019",
+      "name": "臺東縣鹿野鄉青溪協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-020",
+      "name": "臺東縣Ladan文化永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-021",
+      "name": "臺東市區鐵花商圈發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-022",
+      "name": "臺東縣順那．德高老文教產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-023",
+      "name": "臺東縣群耕關懷發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-024",
+      "name": "臺東縣kakawasan文化青年會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-025",
+      "name": "臺東縣海端鄉初來雀榕永續發展自治會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-026",
+      "name": "臺東縣無極忠慈慈惠堂發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-027",
+      "name": "臺東縣東河鄉隆昌村福德宮文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-028",
+      "name": "臺東縣費道宏文化教育發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-029",
+      "name": "臺東縣池上鄉玄武宮文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-030",
+      "name": "臺東縣想望家園愛護動物協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-031",
+      "name": "臺東縣大康樂文化健康服務協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-032",
+      "name": "臺東縣關山永心宮文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-033",
+      "name": "臺東縣青銀共創社會暨環境關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-034",
+      "name": "臺東縣普提文旅學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-035",
+      "name": "台東縣賜安慈善協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-036",
+      "name": "臺東縣池上鄉桌球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-037",
+      "name": "臺東縣邢天王至尊聯盟協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-038",
+      "name": "臺東縣正興農業灌溉水資源保育協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-039",
+      "name": "臺東縣原鄉天使文創協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-040",
+      "name": "臺東縣成功鎮青溪協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-041",
+      "name": "台東縣撒瓦力岸文化產業促進協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-042",
+      "name": "臺東縣東臺灣國際蘭馨交流協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "國際團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-043",
+      "name": "臺東縣池上鄉陸安部落永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-044",
+      "name": "臺東縣原住民Farangaw教育文化產業發展促進協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-045",
+      "name": "臺東縣臺東市台東三清宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-046",
+      "name": "臺東縣金峰鄉老人會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-047",
+      "name": "臺東縣原住民族專業職能培訓推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-048",
+      "name": "臺東縣東河鄉青溪協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-049",
+      "name": "臺東縣東排中會全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-050",
+      "name": "臺東縣溫泉溫心全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-051",
+      "name": "臺東縣寶桑吟社",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-052",
+      "name": "臺東縣利嘉青壯年促進部落發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-053",
+      "name": "臺東縣紫萱草關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-054",
+      "name": "臺東縣好鄰舍全人發展關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-055",
+      "name": "臺東縣遙控無人機應用發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-056",
+      "name": "臺東縣稻葉Gina far lang原住民文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-057",
+      "name": "臺東縣新心好客關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-058",
+      "name": "臺東縣原住民產業拓展文化傳承發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-059",
+      "name": "臺東縣半農半藝推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-060",
+      "name": "臺東縣普悠瑪事故受難者權益保障協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-061",
+      "name": "臺東縣成功鎮萬朝宮文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-062",
+      "name": "臺東縣第二類退除役官兵相互關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-063",
+      "name": "臺東縣社會工作者協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-064",
+      "name": "臺東縣成功鎮比西里岸文化教育促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-065",
+      "name": "臺東縣Fanaw文化教育產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-066",
+      "name": "臺東縣中華兩岸青年企業協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-067",
+      "name": "臺東縣原鄉永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-068",
+      "name": "臺東縣幼兒教育協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-069",
+      "name": "臺東縣紫龍文化創意推展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-070",
+      "name": "臺東縣高智爾球運動發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-071",
+      "name": "臺東縣卑南保安堂聖母天地至尊協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-072",
+      "name": "臺東縣泰安真天宮玄天上帝功德協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-073",
+      "name": "臺東縣慈願慈善文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-074",
+      "name": "臺東縣常春藤愛心協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-075",
+      "name": "臺東縣海洋維護協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-076",
+      "name": "臺東縣原住民貓山產福促進發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-077",
+      "name": "臺東縣零捌玖緊急救護協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-078",
+      "name": "臺東縣高坡原住民文化發展促進協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-079",
+      "name": "臺東縣帆船協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-080",
+      "name": "臺東縣都歷青年文化產業創造協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-081",
+      "name": "臺東縣taljaljibi百合花記永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-082",
+      "name": "臺東縣長濱鄉姑仔律噶瑪蘭協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-LEG-083",
+      "name": "臺東縣成功鎮慢速壘球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-084",
+      "name": "臺東縣臺東市建和保聖宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-085",
+      "name": "臺東縣影音紀錄學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-086",
+      "name": "臺東縣成功鎮東巡順清宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-087",
+      "name": "臺東縣撒里努傘文教促進發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-088",
+      "name": "臺東縣宗教祭祀禮儀用品服務協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-089",
+      "name": "臺東縣哪吒文化發展關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-090",
+      "name": "臺東縣陸軍專科學校校友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "校友會",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-091",
+      "name": "臺東縣山海聯盟原住民文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-092",
+      "name": "臺東縣卑南鄉太平原住民多元族群青年發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-093",
+      "name": "臺東縣原社牧人社會福利慈善關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-094",
+      "name": "臺東縣成功鎮桌球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-095",
+      "name": "臺東縣臺東市岩灣慈德宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-096",
+      "name": "臺東縣林茂生慈善關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-097",
+      "name": "臺東縣自主防救災社區協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-098",
+      "name": "臺東縣成功商水校友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-099",
+      "name": "臺東縣農業機械耕作服務協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-100",
+      "name": "臺東縣卑南鄉初鹿福德祠文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-101",
+      "name": "臺東縣原住民以便以謝全人關懷發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-102",
+      "name": "臺東縣臺東市惠隆瑤池金母文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-103",
+      "name": "臺東縣陸克山全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-104",
+      "name": "臺東市人文關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-105",
+      "name": "臺東縣籃球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-106",
+      "name": "臺東縣原住民種子婦女會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-107",
+      "name": "臺東縣新住民友誼聯盟協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-108",
+      "name": "臺東縣元龍殿三官大帝發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-109",
+      "name": "臺東縣臺東市南天五王文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-110",
+      "name": "臺東縣都蘭多元文化技藝發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-111",
+      "name": "臺東縣臺東市安善堂功德會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-112",
+      "name": "臺東縣延平鄉桃源村二.三層平農林牧暨農特產發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-113",
+      "name": "臺東縣卑南鄉太平多元族群文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-114",
+      "name": "臺東好物協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-115",
+      "name": "台東縣學甲中洲陳桂記宗親會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗親同鄉",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-116",
+      "name": "臺東縣阿美族學學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-117",
+      "name": "臺東縣太麻里鄉大溪阿美族部落傳統文教發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-118",
+      "name": "臺東縣菩提社區關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-119",
+      "name": "臺東縣少年觀護協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-120",
+      "name": "臺東縣太麻里鄉香蘭老人會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-121",
+      "name": "臺東縣海巡之友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "其他公益",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-122",
+      "name": "臺東縣原住民觀光演藝及才藝發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-123",
+      "name": "臺東縣臺東市豐樂工業區廠商協進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-124",
+      "name": "臺東縣戰國邯鄲爺文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-125",
+      "name": "臺東縣臺東市義勇警察發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "其他公益",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-126",
+      "name": "臺東縣原住民音樂教育推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-127",
+      "name": "臺東縣臺東市孔明文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-128",
+      "name": "臺東縣原住民族家給蘇豐文教生態旅遊推動協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-129",
+      "name": "臺東縣心站全人關懷發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-130",
+      "name": "臺東縣大武鄉撞球運動發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-131",
+      "name": "臺東縣縱谷文化產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-132",
+      "name": "臺東縣大武彩虹文創協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-133",
+      "name": "臺東縣達魯瑪克部落守望相助協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "其他公益",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-134",
+      "name": "臺東縣成功鎮新港婦女會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-135",
+      "name": "臺東縣鄉音民族音樂協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-136",
+      "name": "臺東縣迦南樂活全人發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-137",
+      "name": "臺東縣臺東市濟世慈惠堂文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-138",
+      "name": "臺東縣撒舒而雅部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-139",
+      "name": "臺東縣敬心會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-140",
+      "name": "臺東縣海軍陸戰隊退伍隊員協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "其他公益",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-141",
+      "name": "臺東縣身心障礙運動與休閒協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-142",
+      "name": "臺東縣中華基督教加典協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-143",
+      "name": "臺東縣Likavung呂家望文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-144",
+      "name": "臺東縣農創協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-145",
+      "name": "臺東縣馬蘭部落文化傳承協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-146",
+      "name": "臺東縣綠島鄉大樂齡協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-LEG-147",
+      "name": "臺東縣幸福公益協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-148",
+      "name": "臺東縣生命樹教育服務協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-149",
+      "name": "臺東縣卑南鄉高台福德祠文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-150",
+      "name": "臺東縣九天玄女慈善功德會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-151",
+      "name": "臺東縣讀書保健關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-152",
+      "name": "臺東縣長濱鄉客家文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-LEG-153",
+      "name": "臺東縣臺東市光明愛家協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-154",
+      "name": "臺東縣蘭嶼鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-LEG-155",
+      "name": "臺東縣三清道院文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-156",
+      "name": "臺東縣仙鳳宮文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-157",
+      "name": "臺東縣新港國民中學校友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "校友會",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-158",
+      "name": "臺東縣KYD人文藝術音樂輔教推廣發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-159",
+      "name": "臺東縣臺東基督有愛全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-160",
+      "name": "臺東縣卑南鄉三塊厝天后宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-161",
+      "name": "臺東縣客家聯盟文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-162",
+      "name": "臺東縣私立公東高級工業職業學校教師會",
+      "category": "社會團體與人民團體",
+      "sub_category": "自由職業",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-163",
+      "name": "臺東縣虷仔崙溪流域文化生態產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-164",
+      "name": "臺東縣心驛耕新關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-165",
+      "name": "臺東縣養殖協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-166",
+      "name": "臺東縣產業培植發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-167",
+      "name": "臺東縣臺東市無極九天靈鳳宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-168",
+      "name": "臺東縣科技救難協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "其他公益",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-169",
+      "name": "臺東縣巴嘉禮努克排灣祭儀文化永續協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-170",
+      "name": "臺東縣恩信長照關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "醫療衛生",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-171",
+      "name": "臺東縣Pakulungan巴古崙岸部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-172",
+      "name": "臺東縣大武鄉烏督里文化永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-173",
+      "name": "臺東縣鐵路退休人員協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-174",
+      "name": "臺東縣飛揚土風舞社",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-175",
+      "name": "臺東縣金峰鄉青年會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-176",
+      "name": "臺東縣雲曦愛心發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-177",
+      "name": "臺東縣晨陽社會關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-178",
+      "name": "臺東縣環境共生協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-179",
+      "name": "臺東縣陸軍軍官學校校友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "校友會",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-180",
+      "name": "臺東縣佑灣文化推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-181",
+      "name": "臺東縣柏林全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-182",
+      "name": "臺東縣都蘭村萬善堂發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-183",
+      "name": "臺東縣都蘭村福德祠發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-184",
+      "name": "臺東縣臺東市民防治安關懷發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-185",
+      "name": "臺東縣專業職能培育人才發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-186",
+      "name": "臺東縣舞告讚舞蹈社",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-187",
+      "name": "臺東縣原住民族東原社會福利關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-188",
+      "name": "Light長濱教育關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-LEG-189",
+      "name": "臺東縣太麻里鄉新香蘭沙撒拉克部落傳統文教發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-190",
+      "name": "臺東縣友善關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-191",
+      "name": "臺東縣利吉部落文化協進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-192",
+      "name": "臺東縣滾球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-193",
+      "name": "社團法人臺東縣福利關懷暨志願服務協進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-194",
+      "name": "台東縣太麻里鄉大溪社區部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-195",
+      "name": "臺東縣青少年網球發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-196",
+      "name": "台東市農產品自產自銷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-197",
+      "name": "臺東縣鹿野鄉巴卡拉子文化傳承發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-198",
+      "name": "社團法人新世代關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-199",
+      "name": "臺東縣成功鎮玄靈宮文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-200",
+      "name": "臺東縣池上鄉青溪婦女協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-201",
+      "name": "臺東縣馬當拉中華大橋協進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-202",
+      "name": "臺東縣愛鄉協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-203",
+      "name": "臺東縣達搭臘部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-204",
+      "name": "臺東縣產地餐桌協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-205",
+      "name": "臺東縣海端鄉高山旅遊嚮導協作協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-206",
+      "name": "臺東縣水中運動訓練協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-207",
+      "name": "臺東縣成功鎮證覺地藏庵發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-208",
+      "name": "臺東縣基督教女青年會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-209",
+      "name": "臺東縣成功龍智觀王禪老祖宗教文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-210",
+      "name": "臺東縣東河鄉泰源老人會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-211",
+      "name": "臺東縣藝術人文教育發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-212",
+      "name": "臺東縣藝術人文三創協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-213",
+      "name": "臺東縣成功鎮原住民農村文化觀光發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-214",
+      "name": "臺東縣卑南族研究發展學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-215",
+      "name": "臺東縣青溪婦女協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-216",
+      "name": "臺東縣池上鄉文化藝術協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-217",
+      "name": "臺東縣太麻里鄉曙光社區關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-218",
+      "name": "台東回響愛樂協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-219",
+      "name": "臺東縣國立臺灣體育運動大學校友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "校友會",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-220",
+      "name": "臺東縣關山鎮拼布手作協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-221",
+      "name": "臺東淨宗學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-222",
+      "name": "台東縣東台灣雨花齋協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-223",
+      "name": "臺東縣冒險遊憩運動協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-224",
+      "name": "臺東縣太麻里鄉氣功運動協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-225",
+      "name": "臺東縣東河鄉巴阿尼豐永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-226",
+      "name": "臺東縣退役憲兵協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-227",
+      "name": "臺東縣杰成老人樂活協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-228",
+      "name": "臺東縣東河大馬運動發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-229",
+      "name": "臺東縣弘揚北極玄天上帝民俗文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-230",
+      "name": "臺東縣卑南心生活文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-231",
+      "name": "臺東縣太麻里鄉進安宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-232",
+      "name": "臺東縣鹿野鄉永安農業用水管理協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-233",
+      "name": "臺東縣延平鄉布谷拉夫部落永續協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-234",
+      "name": "臺東縣蘭嶼鄉雅美族文化創意發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-LEG-235",
+      "name": "臺東縣無極慈母宮護持功德會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-236",
+      "name": "臺東縣身障者槌球運動關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-237",
+      "name": "臺東縣臺東市海垣廟導訓寺文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-238",
+      "name": "臺東縣家長會長協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-239",
+      "name": "臺東永豐餘造紙退休協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-240",
+      "name": "臺東縣温泉以琳全人關懷發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-241",
+      "name": "臺東縣臺東市顯密利生佛學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-242",
+      "name": "臺東縣臺東市道祖文化關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-243",
+      "name": "臺東縣關山鎮火鳳凰志工協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-244",
+      "name": "臺東縣公務人員協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-245",
+      "name": "臺東縣原住民族南迴得力全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-246",
+      "name": "臺東縣關山加拿聖帝殿文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-247",
+      "name": "臺東縣東河鄉基拉菲婻文教發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-248",
+      "name": "臺東縣磯釣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-249",
+      "name": "臺東縣基督教種子之家全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-250",
+      "name": "臺東縣海端鄉布農撒睦露虎區域生存發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-251",
+      "name": "臺東縣卑南鄉泰安受東宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-252",
+      "name": "臺東市聲浪歌舞運動協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-253",
+      "name": "臺東縣關山鎮義勇警察發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "其他公益",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-254",
+      "name": "臺東縣客家文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-255",
+      "name": "臺東縣臺東市腦中風病友支持協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-256",
+      "name": "臺東縣耶穌小羊協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-257",
+      "name": "臺東縣南迴卓越全人關懷發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-258",
+      "name": "臺東縣池上鄉新興原住民族部落發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-259",
+      "name": "臺東縣橄欖社會關懷服務協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-260",
+      "name": "臺東縣歷坵浸信會全人關懷發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-261",
+      "name": "臺東縣asiloai阿西路愛部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-262",
+      "name": "臺東縣原之藝公益舞蹈協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-263",
+      "name": "臺東縣Pu ngudan部落原住民文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-264",
+      "name": "臺東縣聯合居家發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-265",
+      "name": "臺東縣身障天使勵進協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-266",
+      "name": "臺東縣綠島低碳旅遊推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-LEG-267",
+      "name": "臺東縣臺東市岩灣天上宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-268",
+      "name": "臺東縣長濱鄉體育發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-LEG-269",
+      "name": "臺東縣國立臺灣師範大學體育學系系友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "校友會",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-270",
+      "name": "臺東縣大武鄉古庄原住民產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-271",
+      "name": "臺東縣長濱鄉馬卡道文化關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-LEG-272",
+      "name": "臺東縣太麻里鄉日昇瑜珈運動協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-273",
+      "name": "臺東縣卡阿魯灣新故鄉文教發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-274",
+      "name": "臺東縣基督教彌賽亞教會全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-275",
+      "name": "臺東縣大武鄉加津林部落文化教育關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-276",
+      "name": "臺東縣鸞山聖伯多祿發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-277",
+      "name": "臺東縣原住民彩虹婦女會",
+      "category": "社會團體與人民團體",
+      "sub_category": "其他公益",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-278",
+      "name": "臺東縣布農青年永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-279",
+      "name": "臺東縣東河鄉客家文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-280",
+      "name": "臺東縣池上米自產自銷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-281",
+      "name": "臺東縣邢福一家文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-282",
+      "name": "臺東縣延平鄉桃源天主堂傳教協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-283",
+      "name": "臺東縣延平鄉永康村聖若望發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-284",
+      "name": "臺東縣鎮水殿慈善功德會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-285",
+      "name": "臺東縣延平鄉武陵聖瑪爾定傳教協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-286",
+      "name": "臺東縣臺東市東緣社會關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-287",
+      "name": "臺東縣成功鎮鎮安宮發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-288",
+      "name": "臺東縣達仁鄉pavavaljung推動部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-289",
+      "name": "臺東縣大武鄉大竹村工作地部落文化傳承青年協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-290",
+      "name": "臺東縣卑南鄉十股觀音寺文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-291",
+      "name": "臺東縣耕生社會福利協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-292",
+      "name": "臺東縣加麻里部落文化發展促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-293",
+      "name": "臺東縣新苗羽球發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-294",
+      "name": "臺東縣張廖簡宗親會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗親同鄉",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-295",
+      "name": "臺東縣綠島鄉羽球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-LEG-296",
+      "name": "臺東縣關山鎮愛鄉發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-297",
+      "name": "臺東縣kaqaluan頭目巴卡麓谷部落再造協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-298",
+      "name": "臺東縣太極健康促進協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-299",
+      "name": "臺東縣青年聯合促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-300",
+      "name": "臺東縣守護希望關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-301",
+      "name": "臺東縣池上鄉不倒翁長青關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-302",
+      "name": "臺東縣旭村文教推展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-303",
+      "name": "臺東縣阿里擺文教協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-304",
+      "name": "臺東縣蘭嶼好牧者關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-LEG-305",
+      "name": "臺東縣工商婦女協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-306",
+      "name": "臺東縣青年守護家園公益協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-307",
+      "name": "臺東縣阿里亞凡文化觀光促進協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-308",
+      "name": "臺東縣臺東市中華里平安壇文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-309",
+      "name": "臺東縣成功鎮二聖宮發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-310",
+      "name": "臺東縣關山鎮親水休閒農業區發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-311",
+      "name": "臺東縣私立公東高級工業職業學校校友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "校友會",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-312",
+      "name": "臺東縣舞蹈運動協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-313",
+      "name": "臺東縣原住民松柏關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-314",
+      "name": "臺東縣成功獅子會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-315",
+      "name": "臺東忠義帝君慈善會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-316",
+      "name": "臺東在地綠色飲食發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-317",
+      "name": "臺東縣原住民陽光文化創作發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-318",
+      "name": "臺東縣巴塱衛原生文化創輔協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-319",
+      "name": "臺東縣原住民阿福隆愛部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-320",
+      "name": "臺東縣鹿野鄉新豐聖豐宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-321",
+      "name": "臺東縣臺東市東海水晶宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-322",
+      "name": "臺東縣大武鄉加羅板部落產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-323",
+      "name": "臺東縣阿卡波面全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-324",
+      "name": "臺東縣臺東市開封市場發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-325",
+      "name": "臺東縣飛鏢運動推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-326",
+      "name": "臺東普悠瑪扶輪社",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-327",
+      "name": "臺東縣擎天協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-328",
+      "name": "臺東縣九九快樂協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-329",
+      "name": "臺東縣熱氣球飛行協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-330",
+      "name": "臺東縣卑南鄉班鳩萬善堂功德會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-331",
+      "name": "臺東縣海端鄉瑪拉斯達邦永續協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-332",
+      "name": "臺東縣卑南鄉太平天后宮文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-333",
+      "name": "臺東縣平安社會福利關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-334",
+      "name": "臺東縣綠島鄉無極慈鳳宮慈善功德會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-LEG-335",
+      "name": "臺東縣浯江金門同鄉會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗親同鄉",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-336",
+      "name": "臺東縣布農族東群文教發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-337",
+      "name": "臺東縣一貫道協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-338",
+      "name": "臺東縣社會工作師公會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-339",
+      "name": "臺東縣綠島鄉溫泉土地公廟慈善功德會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-LEG-340",
+      "name": "臺東縣芳芳舞蹈協進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-341",
+      "name": "臺東縣不動產開發商業同業公會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-342",
+      "name": "臺東縣臺東市傳藝文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-343",
+      "name": "臺東縣巴喜告原住民關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-344",
+      "name": "臺東縣書法學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-345",
+      "name": "臺東縣原住民信望愛文教關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-346",
+      "name": "臺東縣池上鄉新興村天上聖母發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-347",
+      "name": "臺東縣國立臺灣師範大學校友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "校友會",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-348",
+      "name": "臺東縣軍榮眷關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-349",
+      "name": "臺東縣新住民關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-350",
+      "name": "臺東縣足部自然健康法協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-351",
+      "name": "臺東縣文創產業交流發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-352",
+      "name": "臺東縣開發隊福德正神文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-353",
+      "name": "臺東縣卑南青溪協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-354",
+      "name": "臺東縣社會福利聯盟",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-355",
+      "name": "臺東縣達仁鄉督阿高咖瑪拉拉俯尚正統習俗文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-356",
+      "name": "臺東縣原住民家庭照顧者關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "醫療衛生",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-357",
+      "name": "臺東縣養鴿協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-358",
+      "name": "臺東縣華佗五禽之戲協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-359",
+      "name": "臺東縣大巴六九文教發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-360",
+      "name": "臺東縣卡拿崙全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-361",
+      "name": "臺東縣鹿野鄉瑞源瑞隆部落祭藝傳承協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-362",
+      "name": "臺東縣大武原生藝術偏鄉關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-363",
+      "name": "臺東縣卡撒發干部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-364",
+      "name": "臺東縣卑南鄉嘉豐文化教育發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-365",
+      "name": "臺東縣聯聖文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-366",
+      "name": "臺東縣小英之友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-367",
+      "name": "臺東縣基督教浸信會中福福音協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-368",
+      "name": "臺東縣大溪宗教文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-369",
+      "name": "臺東縣綠島潛水運動協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-LEG-370",
+      "name": "臺東縣鹿野鄉自行車協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-371",
+      "name": "臺東縣原住民文化暨產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-372",
+      "name": "臺東縣客家婦女協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗親同鄉",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-373",
+      "name": "臺東縣原住民快慢壘球運動休閒推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-374",
+      "name": "臺東縣太麻里鄉新住民關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-375",
+      "name": "臺東縣臺東市社區志工服務社",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-376",
+      "name": "臺東縣漆彈運動協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-377",
+      "name": "臺東縣民間聯合緊急救援協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-378",
+      "name": "臺東縣東青松柏聯誼協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-379",
+      "name": "臺東市青溪協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-380",
+      "name": "臺東縣高台好協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-381",
+      "name": "臺東縣海端鄉馬瑪瑪部落永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-382",
+      "name": "臺東縣年輕糖尿病關懷促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-383",
+      "name": "臺東縣太麻里鄉日昇書法協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-384",
+      "name": "臺東縣人道關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-385",
+      "name": "臺東縣延平鄉槌球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "延平鄉"
+    },
+    {
+      "id": "TT-LEG-386",
+      "name": "臺東縣眷村文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-387",
+      "name": "臺東市降龍功德會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-388",
+      "name": "臺東縣大武鄉觀光發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-389",
+      "name": "臺東縣東成薪傳鄭子太極拳協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-390",
+      "name": "臺東縣書畫教育學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-391",
+      "name": "臺東縣民族音樂發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-392",
+      "name": "臺東縣關山鎮游泳協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-393",
+      "name": "臺東縣卑南族民族自治事務促進發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-394",
+      "name": "臺東縣易經研究學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-395",
+      "name": "臺東縣社區人文愛加倍促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-396",
+      "name": "臺東縣樂齡健康促進協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-397",
+      "name": "臺東縣臺東市張李莫愛心協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-398",
+      "name": "臺東縣天文協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-399",
+      "name": "臺東縣阿朗壹永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-400",
+      "name": "臺東縣中華兩岸企業發展協進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-401",
+      "name": "臺東縣弱勢者關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-402",
+      "name": "臺東縣後山福利協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-403",
+      "name": "臺東縣國際舞蹈協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-404",
+      "name": "臺東縣原住民旮部融岸文化教育促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-405",
+      "name": "臺東縣池上鄉喇密特文化藝術發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-406",
+      "name": "臺東縣釋迦產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-407",
+      "name": "臺東縣原住民Faragaw發旯熱鬧部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-408",
+      "name": "臺東縣金崙溪觀光生態產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-409",
+      "name": "臺東縣金門同鄉會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗親同鄉",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-410",
+      "name": "臺東縣新武呂溪生態人文發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-411",
+      "name": "臺東縣基督教曠野多元文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-412",
+      "name": "臺東縣加夫谷文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-413",
+      "name": "臺東縣運動觀光學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-414",
+      "name": "臺東縣在地文化關懷協進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-415",
+      "name": "臺東縣南田觀光休閒養殖產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-416",
+      "name": "臺東縣太麻里鄉拉勞蘭部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-417",
+      "name": "臺東縣福佑全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-418",
+      "name": "臺東縣長濱羽球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "長濱鄉"
+    },
+    {
+      "id": "TT-LEG-419",
+      "name": "臺東縣瑪歐拉灣生態文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-420",
+      "name": "臺東縣臺東星君信仰人文藝術協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-421",
+      "name": "臺東縣原住民族文化創藝協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-422",
+      "name": "臺東縣卑南鄉高頂山休閒農業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-423",
+      "name": "臺東縣消費性服務業推廣協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-424",
+      "name": "臺東縣太麻里鄉咭林(qilin)文化永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-425",
+      "name": "臺東縣農漁村觀光發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-426",
+      "name": "臺東縣自閉症協進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-427",
+      "name": "臺東縣原鄉原住民經濟產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-428",
+      "name": "臺東縣健康照護協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-429",
+      "name": "臺東縣身心健康體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-430",
+      "name": "臺東縣池上鄉萬朝福德宮發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-431",
+      "name": "臺東縣製糖相關從業退休人員協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-432",
+      "name": "臺東縣五人制足球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-433",
+      "name": "臺東縣大武鄉加津林青年發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-434",
+      "name": "臺東縣射馬干青年文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-435",
+      "name": "臺東縣開天府行善會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-436",
+      "name": "臺東縣有機農業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-437",
+      "name": "臺東縣蘭嶼鄉野銀婦女促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-LEG-438",
+      "name": "臺東縣飛形室內樂團協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-439",
+      "name": "臺東縣珠華山靜修宮道教會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-440",
+      "name": "臺東縣卑南鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-441",
+      "name": "臺東縣阿奚露艾文教發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-442",
+      "name": "臺東縣綠島鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-LEG-443",
+      "name": "臺東縣都蘭海灣原住民部落聯盟",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-444",
+      "name": "臺東縣太麻里鄉德其里文化永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-445",
+      "name": "臺東縣基督教晨光之家協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-446",
+      "name": "臺東縣原住民身心健康促進協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-447",
+      "name": "臺東縣DIY技術發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-448",
+      "name": "臺東縣蘋果單車運動協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-449",
+      "name": "臺東縣大武鄉莫拉克災後文化產業重建永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "工商團體",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-450",
+      "name": "臺東縣補習教育協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-451",
+      "name": "臺東縣多元移民關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-452",
+      "name": "臺東縣臺東市馬當部落文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-453",
+      "name": "臺東縣池上鄉福文福德祠發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-454",
+      "name": "臺東縣深層海水利用發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-455",
+      "name": "臺東縣健體品格關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-456",
+      "name": "臺東縣海端鄉原住民後備袍澤發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-457",
+      "name": "臺東縣蘭嶼觀光發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-LEG-458",
+      "name": "臺東縣海端鄉加拿天主教會文教協進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-459",
+      "name": "臺東縣聖雲宮慈善功德會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-460",
+      "name": "臺東縣身心障礙者保護協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-461",
+      "name": "臺東縣邯鄲爺文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-462",
+      "name": "臺東縣家立立成長協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-463",
+      "name": "臺東縣成功鎮體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-464",
+      "name": "臺東縣成功鎮羽毛球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-465",
+      "name": "臺東縣原住民愛加倍全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-466",
+      "name": "臺東縣盆栽藝術學會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-467",
+      "name": "臺東縣大武鄉社區婦女成長協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-468",
+      "name": "臺東縣卑南鄉溫泉村樂山休閒農業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-469",
+      "name": "臺東縣原住民文化交流協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-470",
+      "name": "臺東縣金峰鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-471",
+      "name": "臺東縣新娘秘書協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-472",
+      "name": "臺東縣佳音喜樂協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-473",
+      "name": "臺東縣成功鎮籃球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-474",
+      "name": "臺東縣臺灣語言文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-475",
+      "name": "臺東縣聖佳琳原住民關懷發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-476",
+      "name": "臺東縣原住民阿拉巴奈部落傳承發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-477",
+      "name": "臺東縣城鄉深耕協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-478",
+      "name": "臺東縣聖心全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-479",
+      "name": "臺東縣達仁鄉Kaingau傳統文化藝術發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-480",
+      "name": "臺東縣原住民生命與光全人關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-481",
+      "name": "臺東縣鹿野鄉巴拉雅拜文化藝術教育協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-482",
+      "name": "臺東縣社會福利關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-483",
+      "name": "臺東縣原住民復基部落文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-484",
+      "name": "社團法人臺東縣南迴健康促進關懷服務協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-485",
+      "name": "臺東縣成功愛心協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-486",
+      "name": "臺東縣給諾迦沙拉督冷關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-487",
+      "name": "臺東縣池上鄉仁善堂慈善發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-488",
+      "name": "臺東縣東河鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "東河鄉"
+    },
+    {
+      "id": "TT-LEG-489",
+      "name": "臺東縣池上鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-490",
+      "name": "臺東縣水中運動協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-491",
+      "name": "臺東縣大竹高溪生態文化保育協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-492",
+      "name": "臺東縣大武鄉小聚軒撞球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-493",
+      "name": "臺東縣太麻里鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-494",
+      "name": "臺東縣臺東之星育成協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-495",
+      "name": "臺東縣中華生物能醫學氣功協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-496",
+      "name": "臺東縣侯氏宗親會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗親同鄉",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-497",
+      "name": "臺東縣鹿野鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "鹿野鄉"
+    },
+    {
+      "id": "TT-LEG-498",
+      "name": "臺東縣原住民暨多元族群文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-499",
+      "name": "臺東縣關山鎮體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-500",
+      "name": "臺東縣大武鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-501",
+      "name": "臺東縣卡拉魯然文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-502",
+      "name": "臺東縣原住民藝術創意生活協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-503",
+      "name": "臺東縣海峽兩岸少數民族經濟文化交流協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-504",
+      "name": "臺東縣海端鄉體育會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-505",
+      "name": "臺東縣希望關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-506",
+      "name": "臺東縣巴然依然依部落永續發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-507",
+      "name": "臺東縣物理治療師公會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-508",
+      "name": "臺東縣伊甸園關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-509",
+      "name": "臺東縣臺東市福基兒阿美族文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-510",
+      "name": "臺東縣好客真幸福關懷協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-511",
+      "name": "臺東縣達仁鄉古發冷產業文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-512",
+      "name": "臺東縣地母至尊聯誼會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-513",
+      "name": "臺東縣東臺灣產業技能訓練發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "成功鎮"
+    },
+    {
+      "id": "TT-LEG-514",
+      "name": "臺東縣關山太極拳協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "關山鎮"
+    },
+    {
+      "id": "TT-LEG-515",
+      "name": "臺東縣藝術手工皂協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-516",
+      "name": "臺東縣臺東市日知協進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-517",
+      "name": "臺東縣國防大學政戰學院校友會",
+      "category": "社會團體與人民團體",
+      "sub_category": "校友會",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-518",
+      "name": "臺東縣主溪流文化產業促進協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-519",
+      "name": "臺東縣海端國際同濟會",
+      "category": "社會團體與人民團體",
+      "sub_category": "國際團體",
+      "township": "海端鄉"
+    },
+    {
+      "id": "TT-LEG-520",
+      "name": "臺東縣旭日民族文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-521",
+      "name": "臺東縣卑南鄉青年志工協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "卑南鄉"
+    },
+    {
+      "id": "TT-LEG-522",
+      "name": "臺東縣建築師公會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-523",
+      "name": "臺東縣百姓慈善公德協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-524",
+      "name": "臺東縣臺東市慈聖功德會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-525",
+      "name": "臺東縣蘭嶼文化產業促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-LEG-526",
+      "name": "臺東縣笆札筏文化發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "大武鄉"
+    },
+    {
+      "id": "TT-LEG-527",
+      "name": "臺東縣達仁鄉原住民族休閒文化觀光發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "達仁鄉"
+    },
+    {
+      "id": "TT-LEG-528",
+      "name": "臺東縣恆馨內輪之友聯誼會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-529",
+      "name": "臺東縣池上鄉慢速壘球協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "體育團體",
+      "township": "池上鄉"
+    },
+    {
+      "id": "TT-LEG-530",
+      "name": "臺東縣綠島文化觀光生態發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-LEG-531",
+      "name": "臺東縣蘭嶼鄉達悟文化研究發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "蘭嶼鄉"
+    },
+    {
+      "id": "TT-LEG-532",
+      "name": "臺東縣南迴守護者協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-533",
+      "name": "臺東縣傳統信仰人文藝術發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "學術文化",
+      "township": "太麻里鄉"
+    },
+    {
+      "id": "TT-LEG-534",
+      "name": "臺東縣大馬蘭阿美文化協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "社服慈善",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-535",
+      "name": "臺東縣原住民嘉蘭災難自救暨文化經濟產業促進會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "金峰鄉"
+    },
+    {
+      "id": "TT-LEG-536",
+      "name": "臺東縣三官發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "宗教團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-537",
+      "name": "臺東縣綠島觀光導覽解說協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "綠島鄉"
+    },
+    {
+      "id": "TT-LEG-538",
+      "name": "臺東縣數位產業發展協會",
+      "category": "社會團體與人民團體",
+      "sub_category": "經濟團體",
+      "township": "臺東市"
+    },
+    {
+      "id": "TT-LEG-539",
+      "name": "臺東縣臺東市國際同濟會",
+      "category": "社會團體與人民團體",
+      "sub_category": "國際團體",
+      "township": "臺東市"
+    }
+  ],
+  "latest_check_time": "2026-11-01 07:15:33"
+}
