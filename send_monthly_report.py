@@ -21,7 +21,11 @@ SMTP_USER = os.getenv("SMTP_USER")
 SMTP_PASSWORD = os.getenv("SMTP_PASSWORD")
 SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
 SMTP_PORT = int(os.getenv("SMTP_PORT", 465))
-TO_EMAIL = os.getenv("REPORT_TO_EMAIL", "[REDACTED_EMAIL]")
+TO_EMAIL = os.getenv("REPORT_TO_EMAIL", "").strip()
+
+if not TO_EMAIL:
+    print("[SKIP] 未設定 REPORT_TO_EMAIL，略過郵件發送。")
+    sys.exit(0)
 
 if not SMTP_USER or not SMTP_PASSWORD:
     print("[SKIP] 未設定 SMTP_USER 或 SMTP_PASSWORD，略過郵件發送。")
@@ -80,6 +84,6 @@ try:
     with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT) as server:
         server.login(SMTP_USER, SMTP_PASSWORD)
         server.sendmail(SMTP_USER, TO_EMAIL, msg.as_string())
-    print(f"[OK] 已成功發送通報郵件至 {TO_EMAIL}")
+    print("[OK] 已成功發送通報郵件。")
 except Exception as e:
-    print(f"[WARN] 郵件發送失敗: {e}")
+    print(f"[WARN] 郵件發送失敗 ({type(e).__name__})。")

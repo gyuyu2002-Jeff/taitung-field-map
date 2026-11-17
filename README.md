@@ -44,6 +44,7 @@
 ### 6. 每月 1 號定時自動更新機器人 (GitHub Actions)
 * 每月 1 號上午 09:00（UTC 01:00），GitHub Actions 自動啟動爬蟲，對齊最新立案協會與文健站清冊。
 * 增量比對，保護使用者在外勤建立的個人拜訪筆記與狀態，自動重新編譯並推送到 GitHub Pages。
+* 郵件收件信箱由 GitHub Actions Secret `REPORT_TO_EMAIL` 提供，不寫入公開程式碼。寄信另需 `SMTP_USER` 與 `SMTP_PASSWORD`；手動執行時使用同名環境變數，缺少設定則略過寄送。
 
 ---
 
