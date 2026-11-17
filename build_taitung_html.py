@@ -8,6 +8,7 @@ import json
 import os
 import sys
 import base64
+from public_data import to_public_bundle
 
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
@@ -20,11 +21,11 @@ if not os.path.exists(DATABASE_FILE):
     raise FileNotFoundError(f"找不到 {DATABASE_FILE}！請先執行 generate_taitung_database.py")
 
 with open(DATABASE_FILE, 'r', encoding='utf-8') as f:
-    bundle = json.load(f)
+    bundle = to_public_bundle(json.load(f))
 
 print(f"[OK] 成功載入 {DATABASE_FILE}，內含 {bundle['total_units']} 家單位（文健站 {bundle['wjs_units']} 站、協會 {bundle['ass_units']} 所）")
 
-database_json = json.dumps(bundle, ensure_ascii=False)
+database_json = json.dumps(bundle, ensure_ascii=False).replace('<', '\\u003c')
 
 def get_base64_data_uri(filepath, mime='image/png'):
     if os.path.exists(filepath):
@@ -825,7 +826,7 @@ html_template = '''<!DOCTYPE html>
         <div class="brand-icon">🏢</div>
         <div>
           <div class="brand-title">臺東協會與文健站拜訪地圖</div>
-          <div class="brand-subtitle">立案社會團體 · 原住民文化健康站 · 外勤拜訪管理系統</div>
+          <div class="brand-subtitle">公開精簡版 · 單位名稱、類別與鄉鎮 · 本機拜訪紀錄</div>
         </div>
       </div>
       <div class="header-actions">
@@ -883,7 +884,7 @@ html_template = '''<!DOCTYPE html>
     <div class="filter-row">
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" class="search-input" placeholder="搜尋單位名稱、理事長/站長姓名、電話、路段、部落、字號...">
+        <input type="text" id="searchInput" class="search-input" placeholder="搜尋單位名稱、類別或鄉鎮...">
       </div>
       <div class="quick-filter-group" id="visitStatusFilter">
         <button class="quick-chip active" data-status="全部">全部單位</button>
@@ -892,12 +893,8 @@ html_template = '''<!DOCTYPE html>
         <button class="quick-chip" data-status="成交簽約">🎉 成交簽約</button>
       </div>
     </div>
-    <!-- 同路 / 同部落巡訪快捷快篩 -->
     <div class="filter-row" style="padding-top: 2px;">
-      <span style="font-size:0.75rem; font-weight:700; color:var(--muted); white-space:nowrap;">🛣️ 同路段/部落巡訪：</span>
-      <div class="quick-filter-group" id="streetTagGroup">
-        <!-- 動態依鄉鎮生成同路段標籤 -->
-      </div>
+      <span style="font-size:0.75rem; color:var(--muted);">🔒 公開名單不含個人姓名、電話及詳細地址。地圖標記為鄉鎮概略位置，不是單位所在地。</span>
     </div>
   </div>
 
@@ -917,7 +914,7 @@ html_template = '''<!DOCTYPE html>
     <!-- Right Map Pane -->
     <div class="map-pane" id="mapPane">
       <div id="map"></div>
-      <div class="map-zoom-hint" id="mapZoomHint">🔍 放大至鄉鎮街區 (>=13級) 自動浮現站名</div>
+      <div class="map-zoom-hint" id="mapZoomHint">📍 鄉鎮概略位置與符合篩選的單位筆數；不提供精確導航</div>
     </div>
   </div>
 
@@ -1003,7 +1000,7 @@ html_template = '''<!DOCTYPE html>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
   <script>
-    // 注入全量資料庫 (701 家單位)
+    // 僅注入公開欄位，不包含原始聯絡名單
     const TAITUNG_DB = __DATABASE_JSON__;
 
     // 本機 CRM 儲存 Key
@@ -1060,7 +1057,6 @@ html_template = '''<!DOCTYPE html>
     let currentTownship = "全部";
     let currentCategory = "全部"; // 全部, 原住民文化健康站, 社會團體與人民團體
     let currentVisitStatus = "全部"; // 全部, 待拜訪, 已拜訪, 成交簽約
-    let currentStreet = "全部";
     let currentSearch = "";
     let activeUnitId = null;
 
@@ -1072,7 +1068,7 @@ html_template = '''<!DOCTYPE html>
     // 初始化地圖
     function initMap() {
       map = L.map('map', {
-        center: [22.7583, 121.1444],
+        center: [22.76, 121.14],
         zoom: 12,
         zoomControl: true,
         // 平滑滾輪縮放參數：解決滑鼠滾動一下瞬間跳躍放大 2~3 級的問題
@@ -1100,10 +1096,10 @@ html_template = '''<!DOCTYPE html>
         mapEl.classList.toggle('show-auto-labels', isZoomed);
         if (hintEl) {
           if (isZoomed) {
-            hintEl.innerHTML = `🏷️ 站名常駐顯示中 (縮放: ${zoom}級)`;
+            hintEl.innerHTML = `🏷️ 鄉鎮筆數顯示中；標記不是單位所在地 (縮放: ${zoom}級)`;
             hintEl.style.background = 'rgba(5, 150, 105, 0.9)';
           } else {
-            hintEl.innerHTML = `🔍 放大至鄉鎮街區 (>=13級) 自動浮現站名`;
+            hintEl.innerHTML = `📍 鄉鎮概略位置與符合篩選的單位筆數；不提供精確導航`;
             hintEl.style.background = 'rgba(15, 23, 42, 0.85)';
           }
         }
@@ -1180,7 +1176,6 @@ html_template = '''<!DOCTYPE html>
     // 切換鄉鎮
     function selectTownship(tw) {
       currentTownship = tw;
-      currentStreet = "全部";
       document.querySelectorAll('#townshipBar .nav-chip').forEach(b => {
         b.classList.toggle('active', b.textContent.includes(tw));
       });
@@ -1189,9 +1184,9 @@ html_template = '''<!DOCTYPE html>
       // 平滑飛向該鄉鎮核心
       if (tw !== "全部" && TAITUNG_DB.township_coords[tw]) {
         const c = TAITUNG_DB.township_coords[tw];
-        map.flyTo([c.lat, c.lng], 13, { duration: 1 });
+        map.flyTo([c.lat, c.lng], 11, { duration: 1 });
       } else {
-        map.flyTo([22.7583, 121.1444], 11, { duration: 1 });
+        map.flyTo([22.76, 121.14], 11, { duration: 1 });
       }
 
       filterAndRender();
@@ -1254,7 +1249,7 @@ html_template = '''<!DOCTYPE html>
     function filterUnits() {
       return TAITUNG_DB.units.filter(item => {
         // 分區過濾
-        if (currentZone !== "全部" && item.zone !== currentZone) return false;
+        if (currentZone !== "全部" && TAITUNG_DB.township_coords[item.township].zone !== currentZone) return false;
         // 鄉鎮過濾
         if (currentTownship !== "全部" && item.township !== currentTownship) return false;
         // 類別過濾
@@ -1267,42 +1262,12 @@ html_template = '''<!DOCTYPE html>
           if (currentVisitStatus === "已拜訪" && !hasVisited) return false;
           if (currentVisitStatus === "成交簽約" && log.stage !== "成交簽約") return false;
         }
-        // 同路段/同部落過濾
-        if (currentStreet !== "全部" && item.street !== currentStreet) return false;
         // 關鍵字搜尋
         if (currentSearch) {
-          const combined = `${item.name} ${item.leader} ${item.phone} ${item.address} ${item.street} ${item.register_no}`.toLowerCase();
+          const combined = `${item.name} ${item.category} ${item.sub_category} ${item.township}`.toLowerCase();
           if (!combined.includes(currentSearch)) return false;
         }
         return true;
-      });
-    }
-
-    // 渲染同路/同部落標籤群
-    function renderStreetTags(units) {
-      const group = document.getElementById('streetTagGroup');
-      group.innerHTML = '';
-
-      const counts = {};
-      units.forEach(u => {
-        if (u.street && u.street !== "市區核心" && u.street !== "主要幹道") {
-          counts[u.street] = (counts[u.street] || 0) + 1;
-        }
-      });
-
-      const allChip = document.createElement('button');
-      allChip.className = `quick-chip ${currentStreet === "全部" ? "active" : ""}`;
-      allChip.textContent = `全部 (${units.length})`;
-      allChip.onclick = () => { currentStreet = "全部"; filterAndRender(); };
-      group.appendChild(allChip);
-
-      const sorted = Object.entries(counts).sort((a,b) => b[1] - a[1]).slice(0, 10);
-      sorted.forEach(([street, cnt]) => {
-        const chip = document.createElement('button');
-        chip.className = `quick-chip ${currentStreet === street ? "active" : ""}`;
-        chip.textContent = `${street} (${cnt})`;
-        chip.onclick = () => { currentStreet = street; filterAndRender(); };
-        group.appendChild(chip);
       });
     }
 
@@ -1313,7 +1278,6 @@ html_template = '''<!DOCTYPE html>
       displayedCount = 60;
 
       updateVisitFilterCounts();
-      renderStreetTags(currentUnits);
       renderCards();
       renderMarkers();
     }
@@ -1348,21 +1312,17 @@ html_template = '''<!DOCTYPE html>
             <span class="category-badge ${isWjs ? 'badge-wjs' : 'badge-ass'}">${isWjs ? '🏡 文健站' : '🏛️ 協會'}</span>
           </div>
           <div class="card-meta-line">
-            <span class="card-meta-item">👤 <strong>${item.leader || '負責人洽詢'}</strong></span>
-            ${item.phone ? `<span class="card-meta-item">📞 <a href="tel:${item.phone}" class="card-phone" onclick="event.stopPropagation()">${item.phone}</a></span>` : ''}
-            <span class="card-meta-item">📍 ${item.township} · ${item.street}</span>
+            <span class="card-meta-item">📍 ${item.township}（概略位置）</span>
           </div>
-          <div class="card-address">🏢 ${item.address}</div>
           <div class="card-meta-line">
             <span class="unit-subcat-pill">${item.sub_category || (isWjs ? '部落文化健康站' : '立案社會團體')}</span>
-            ${item.sponsor ? `<span style="font-size:0.72rem; color:var(--muted);">主管：${item.sponsor}</span>` : ''}
           </div>
           <div class="visit-summary-box">
             <span>📅 ${latestVisit}</span>
             <span style="font-weight:700; color:${hasVisited ? '#059669' : '#94A3B8'};">${hasVisited ? '✓ 已建檔' : '○ 待開發'}</span>
           </div>
           <div class="card-actions" onclick="event.stopPropagation()">
-            <button class="card-btn" onclick="openGoogleNav('${encodeURIComponent(item.name)}', '${encodeURIComponent(item.address)}')">🚗 導航</button>
+            <button class="card-btn" onclick="selectTownship('${item.township}')">📍 鄉鎮概覽</button>
             <button class="card-btn card-btn-primary" onclick="openVisitModal('${item.id}')">📋 拜訪紀錄</button>
           </div>
         `;
@@ -1381,59 +1341,28 @@ html_template = '''<!DOCTYPE html>
       }
     });
 
-    // 渲染地圖圖釘 (全量渲染，放大自動浮現名稱)
+    // 每個鄉鎮只顯示一個概略標記，避免將位置誤認為單位會址。
     function renderMarkers() {
       markersLayer.clearLayers();
-      const limit = currentUnits.length;
-
-      for (let i = 0; i < limit; i++) {
-        const item = currentUnits[i];
-        if (!item.lat || !item.lng) continue;
-
-        const isWjs = item.category === "原住民文化健康站";
-        const marker = L.marker([item.lat, item.lng], {
-          icon: createCustomIcon(item.category)
+      const counts = new Map();
+      currentUnits.forEach(item => counts.set(item.township, (counts.get(item.township) || 0) + 1));
+      counts.forEach((count, township) => {
+        const center = TAITUNG_DB.township_coords[township];
+        const marker = L.marker([center.lat, center.lng], {
+          icon: createCustomIcon('鄉鎮概覽')
         });
-
-        // 綁定常駐標籤（放大時透過 CSS .show-auto-labels 自動浮現，免點選）
-        const tooltipText = isWjs ? `🏡 ${item.name}` : `🏛️ ${item.name}`;
-        marker.bindTooltip(tooltipText, {
+        marker.bindTooltip(`${township} · ${count} 筆`, {
           permanent: true,
           direction: 'top',
           offset: [0, -28],
-          className: isWjs ? 'marker-auto-tooltip tooltip-wjs' : 'marker-auto-tooltip tooltip-ass'
+          className: 'marker-auto-tooltip tooltip-ass'
         });
-
-        // 點擊地圖圖釘時聯動卡片與聚焦
-        marker.on('click', () => {
-          focusUnit(item, false);
-        });
-
-        const popupHtml = `
-          <div style="font-family:'Noto Sans TC',sans-serif; min-width:210px;">
-            <div style="font-weight:800; font-size:0.95rem; color:#0F172A; margin-bottom:4px;">
-              ${item.name}
-            </div>
-            <div style="font-size:0.75rem; color:#64748B; margin-bottom:6px;">
-              <span style="background:${isWjs ? '#D1FAE5' : '#E0E7FF'}; color:${isWjs ? '#047857' : '#4338CA'}; padding:1px 5px; border-radius:3px; font-weight:700;">
-                ${isWjs ? '🏡 文化健康站' : '🏛️ 人民團體協會'}
-              </span>
-              · ${item.township}
-            </div>
-            <div style="font-size:0.8rem; line-height:1.4; margin-bottom:8px;">
-              👤 <strong>${item.leader || '負責人'}</strong><br>
-              📞 <a href="tel:${item.phone}" style="color:#0284C7; font-weight:700; text-decoration:none;">${item.phone || '無電話紀錄'}</a><br>
-              📍 ${item.address}
-            </div>
-            <div style="display:flex; gap:5px; margin-top:8px;">
-              <button onclick="openGoogleNav('${encodeURIComponent(item.name)}', '${encodeURIComponent(item.address)}')" style="flex:1; padding:5px; font-size:0.75rem; font-weight:700; background:#F1F5F9; border:1px solid #CBD5E1; border-radius:4px; cursor:pointer;">🚗 導航</button>
-              <button onclick="openVisitModal('${item.id}')" style="flex:1; padding:5px; font-size:0.75rem; font-weight:700; background:#0D9488; color:white; border:none; border-radius:4px; cursor:pointer;">📋 紀錄</button>
-            </div>
-          </div>
-        `;
-        marker.bindPopup(popupHtml);
+        const popup = document.createElement('div');
+        popup.textContent = `${township}：符合篩選 ${count} 筆。此為鄉鎮概略位置，並非單位所在地。`;
+        marker.bindPopup(popup);
+        marker.on('click', () => selectTownship(township));
         markersLayer.addLayer(marker);
-      }
+      });
     }
 
     // 聚焦特定單位
@@ -1447,14 +1376,9 @@ html_template = '''<!DOCTYPE html>
       }
 
       if (fly) {
-        map.flyTo([item.lat, item.lng], 15, { duration: 0.8 });
+        const center = TAITUNG_DB.township_coords[item.township];
+        map.flyTo([center.lat, center.lng], 11, { duration: 0.8 });
       }
-    }
-
-    // Google Maps 導航
-    function openGoogleNav(name, addr) {
-      const q = `${name} ${addr}`;
-      window.open(`https://www.google.com/maps/search/?api=1&query=${q}`, '_blank');
     }
 
     // CRM 彈窗管理
@@ -1542,14 +1466,14 @@ html_template = '''<!DOCTYPE html>
       activeLogUnit = item;
 
       document.getElementById('visitUnitName').textContent = item.name;
-      document.getElementById('visitUnitInfo').textContent = `${item.category} · ${item.township} · ${item.leader} · ${item.phone}`;
+      document.getElementById('visitUnitInfo').textContent = `${item.category} · ${item.township} · 下方為你自行填寫的本機紀錄`;
 
       const log = visitStore[item.id] || {};
       const currentStage = log.stage || '初次拜訪/遞名片';
 
       renderStageChips(currentStage);
 
-      document.getElementById('visitContact').value = log.contact || item.leader || '';
+      document.getElementById('visitContact').value = log.contact || '';
       document.getElementById('visitNotes').value = log.notes || '';
       document.getElementById('visitFollowUp').value = log.follow_up || '';
 
@@ -1660,8 +1584,8 @@ html_template = '''<!DOCTYPE html>
     // 匯出 CSV (Excel 繁中相容 UTF-8 with BOM)
     document.getElementById('exportBtn').onclick = () => {
       let csv = '\uFEFF' + [
-        '編號', '單位名稱', '類別', '次分類', '鄉鎮市', '主要路段', '會址',
-        '負責人', '聯絡電話', '最新拜訪日期', '拜訪進度階段',
+        '編號', '單位名稱', '類別', '次分類', '鄉鎮市',
+        '最新拜訪日期', '拜訪進度階段',
         '接洽窗口', '拜訪紀錄', '下次預計待辦與回訪日'
       ].join(',') + String.fromCharCode(10);
 
@@ -1673,10 +1597,6 @@ html_template = '''<!DOCTYPE html>
           u.category,
           u.sub_category,
           u.township,
-          u.street,
-          `"${u.address.replace(/"/g, '""')}"`,
-          u.leader || "",
-          u.phone || "",
           log.latest_date || "",
           `"${(log.stage || '').replace(/"/g, '""')}"`,
           `"${(log.contact || '').replace(/"/g, '""')}"`,

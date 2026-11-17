@@ -14,6 +14,10 @@ import json
 import datetime
 import urllib.request
 import urllib.error
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from public_data import write_public_database
 
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
@@ -72,8 +76,7 @@ def check_government_updates():
     database['updated_at'] = now.strftime("%Y-%m-01")
     database['latest_check_time'] = now.strftime("%Y-%m-%d %H:%M:%S")
 
-    with open(DATA_FILE, 'w', encoding='utf-8') as f:
-        json.dump(database, f, ensure_ascii=False, indent=2)
+    write_public_database(database, DATA_FILE)
 
     print(f"[BOT] 資料庫時間戳記已成功更新至：{current_month_str}")
     return True

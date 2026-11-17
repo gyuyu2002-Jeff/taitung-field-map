@@ -46,6 +46,7 @@ jobs:
 
       - name: 檢查資料庫變更並自動提交推送
         run: |
+          python -m unittest discover -s tests -v
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
